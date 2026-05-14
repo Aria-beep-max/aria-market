@@ -1,0 +1,32 @@
+# .github/workflows/notify.yml
+# 每天定時執行超底警報
+
+name: 超底警報通知
+
+on:
+  schedule:
+    # 台股收盤後（台灣 14:00 = UTC 06:00）週一到週五
+    - cron: "0 6 * * 1-5"
+    # 美股收盤後（台灣 06:00 = UTC 22:00 前一天）週二到週六
+    - cron: "0 22 * * 1-5"
+  workflow_dispatch:   # 允許手動觸發測試
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt requests
+
+      - name: Run notify
+        run: python notify.py
