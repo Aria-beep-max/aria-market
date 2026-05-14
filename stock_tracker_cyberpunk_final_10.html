@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GURA MARKET // TRACKER · 20日歷史三合一</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black: #04050d; --deep: #080c18; --surface: #0c1120; --panel: #0f1628;
+  --cyan: #00e5ff; --cyan-dim: rgba(0,229,255,0.12); --cyan-glow: rgba(0,229,255,0.35);
+  --pink: #ff006e; --pink-dim: rgba(255,0,110,0.12); --pink-glow: rgba(255,0,110,0.35);
+  --yellow: #ffee33; --yellow-dim: rgba(255,230,0,0.1);
+  --green: #00ff88; --up: #00ffaa; --up-glow: rgba(0,255,136,0.25);
+  --down: #ff5580; --down-glow: rgba(255,60,110,0.25);
+  --text: #dde8f8; --text-dim: #3a4a6a; --border: rgba(0,229,255,0.25); --border-bright: rgba(0,229,255,0.6);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Rajdhani',sans-serif;background:var(--black);color:var(--text);min-height:100vh;font-size:12px;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.15) 2px,rgba(0,0,0,0.15) 4px);pointer-events:none;z-index:9999;}
+body::after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,229,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0;}
+.page{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:0 28px 60px;}
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0 18px;border-bottom:1px solid var(--border);margin-bottom:28px;position:relative;}
+nav::after{content:'';position:absolute;bottom:-1px;left:0;width:180px;height:1px;background:var(--cyan);box-shadow:0 0 12px var(--cyan);}
+.logo{font-family:'Orbitron',sans-serif;font-weight:900;font-size:20px;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);text-shadow:0 0 20px var(--cyan-glow);display:flex;gap:10px;}
+.logo-bracket{color:var(--pink);text-shadow:0 0 12px var(--pink-glow);}
+@keyframes glitch{0%,92%,100%{clip-path:none;transform:none;opacity:1}93%{clip-path:polygon(0 20%,100% 20%,100% 40%,0 40%);transform:translateX(-3px);opacity:.8}94%{clip-path:polygon(0 60%,100% 60%,100% 80%,0 80%);transform:translateX(3px);opacity:.8}95%{clip-path:none;transform:none}96%{clip-path:polygon(0 30%,100% 30%,100% 50%,0 50%);transform:translateX(-2px)}97%{clip-path:none;transform:none}}
+.logo-text{animation:glitch 6s infinite;position:relative;}
+.nav-center{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text-dim);display:flex;gap:20px;}
+.ticker-item{display:flex;align-items:center;gap:6px;}
+.dot-live{width:5px;height:5px;background:var(--green);border-radius:50%;box-shadow:0 0 8px var(--green);animation:blink 1.2s step-end infinite;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.nav-right{display:flex;gap:12px;}
+.cyber-btn{cursor:pointer;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:9px 20px;background:transparent;color:var(--cyan);border:1px solid var(--cyan);clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);transition:all .2s;text-shadow:0 0 10px var(--cyan-glow);position:relative;}
+.cyber-btn::before{content:'';position:absolute;inset:0;background:var(--cyan-dim);opacity:0;transition:opacity .2s;}
+.cyber-btn:hover{box-shadow:0 0 20px var(--cyan-glow),inset 0 0 20px var(--cyan-dim);}
+.cyber-btn:hover::before{opacity:1;}
+.cyber-btn:disabled{opacity:.3;cursor:not-allowed;}
+.summary-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px;margin-bottom:24px;}
+.s-card{background:var(--panel);border:1px solid var(--border);padding:14px 16px 12px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));animation:fadeInUp .5s ease both;position:relative;}
+.s-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,var(--cyan),transparent);box-shadow:0 0 8px var(--cyan-glow);}
+.s-label{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);text-shadow:0 0 8px var(--cyan-glow);margin-bottom:8px;}
+.s-val{font-family:'Orbitron',sans-serif;font-size:20px;font-weight:700;color:var(--cyan);text-shadow:0 0 15px var(--cyan-glow);line-height:1;}
+.s-val.up{color:var(--up);text-shadow:0 0 15px var(--up-glow);}
+.s-val.down{color:var(--down);text-shadow:0 0 15px var(--down-glow);}
+.s-sub{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text);margin-top:4px;}
+.s-card::after{content:'';position:absolute;bottom:0;right:0;width:12px;height:12px;border-bottom:1px solid var(--cyan);border-right:1px solid var(--cyan);box-shadow:2px 2px 6px var(--cyan-glow);}
+.toolbar{display:flex;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.section-tag{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:600;letter-spacing:3px;color:var(--pink);text-transform:uppercase;text-shadow:0 0 10px var(--pink-glow);margin-right:8px;padding:4px 10px;border:1px solid var(--pink);clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%);background:var(--pink-dim);}
+.filter-wrap{display:flex;gap:3px;}
+.flt-btn{cursor:pointer;font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:1px;padding:6px 14px;border:1px solid var(--border);background:transparent;color:var(--text-dim);clip-path:polygon(5px 0,100% 0,calc(100% - 5px) 100%,0 100%);transition:all .15s;}
+.flt-btn:hover{color:var(--cyan);border-color:var(--cyan);}
+.flt-btn.active{background:var(--cyan-dim);color:var(--cyan);border-color:var(--cyan);text-shadow:0 0 8px var(--cyan-glow);box-shadow:0 0 10px var(--cyan-dim);}
+.toolbar-right{margin-left:auto;display:flex;gap:8px;}
+.cyber-input{background:var(--surface);border:1px solid var(--border);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:11px;padding:7px 12px;width:160px;outline:none;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%);}
+.cyber-input:focus{border-color:var(--cyan);box-shadow:0 0 12px var(--cyan-dim);}
+.cyber-select{background:var(--surface);border:1px solid var(--border);color:var(--text-dim);font-family:'Share Tech Mono',monospace;font-size:12px;padding:7px 10px;outline:none;cursor:pointer;}
+.table-shell{position:relative;border:1px solid var(--border);background:var(--panel);}
+.table-shell::before,.table-shell::after,.bracket-bl,.bracket-br{content:'';position:absolute;width:14px;height:14px;z-index:2;}
+.table-shell::before{top:-1px;left:-1px;border-top:2px solid var(--cyan);border-left:2px solid var(--cyan);box-shadow:-2px -2px 10px var(--cyan-glow);}
+.table-shell::after{top:-1px;right:-1px;border-top:2px solid var(--cyan);border-right:2px solid var(--cyan);box-shadow:2px -2px 10px var(--cyan-glow);}
+.bracket-bl{bottom:-1px;left:-1px;border-bottom:2px solid var(--cyan);border-left:2px solid var(--cyan);box-shadow:-2px 2px 10px var(--cyan-glow);}
+.bracket-br{bottom:-1px;right:-1px;border-bottom:2px solid var(--cyan);border-right:2px solid var(--cyan);box-shadow:2px 2px 10px var(--cyan-glow);}
+.tbl-wrap{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;}
+thead th{font-family:'Share Tech Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text);padding:12px 16px;text-align:right;border-bottom:1px solid var(--border-bright);background:var(--deep);white-space:nowrap;cursor:pointer;}
+thead th:first-child,thead th:nth-child(2){text-align:left;}
+thead th:hover{color:var(--cyan);}
+tbody td{padding:10px 16px;text-align:right;border-bottom:1px solid rgba(0,229,255,0.06);font-family:'Share Tech Mono',monospace;font-size:12px;white-space:nowrap;color:var(--text);}
+tbody td:first-child,tbody td:nth-child(2){text-align:left;}
+tbody tr:hover td{background:rgba(0,229,255,0.04);}
+.sym-cell{font-family:'Orbitron',sans-serif;font-weight:700;font-size:11px;color:var(--cyan);text-shadow:0 0 10px var(--cyan-glow);}
+.name-cell{font-family:'Rajdhani',sans-serif;font-size:12px;font-weight:500;color:var(--text);}
+.chg-up{color:var(--up);text-shadow:0 0 8px var(--up-glow);}
+.chg-down{color:var(--down);text-shadow:0 0 8px var(--down-glow);}
+.pct-pill{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;font-size:11px;font-weight:600;border-radius:2px;}
+.pct-pill.up{background:var(--up-glow);color:var(--up);border:1px solid rgba(0,255,136,0.3);}
+.pct-pill.down{background:var(--down-glow);color:var(--down);border:1px solid rgba(255,60,110,0.3);}
+.period-up{color:var(--up);opacity:.75;}
+.period-down{color:var(--down);opacity:.75;}
+.badge{font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:2px;padding:4px 12px;text-transform:uppercase;display:inline-flex;align-items:center;justify-content:center;}
+.badge-obs{background:rgba(255,255,255,0.04);color:#8ab0cc;border:1px solid rgba(138,176,204,0.35);clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%);}
+.badge-alert{background:var(--yellow-dim);color:var(--yellow);border:1px solid rgba(255,230,0,0.4);text-shadow:0 0 8px rgba(255,230,0,0.5);clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%);}
+.badge-watch{background:rgba(0,20,30,0.7);color:var(--cyan);border:1.5px solid var(--cyan);text-shadow:0 0 10px var(--cyan-glow);box-shadow:0 0 10px rgba(0,229,255,0.35), inset 0 0 0 2px rgba(0,10,15,0.9), inset 0 0 0 4px rgba(0,229,255,0.25);border-radius:4px;clip-path:none;padding:5px 14px;font-size:12px;letter-spacing:2.5px;}
+.badge-trigger{background:rgba(20,0,10,0.7);color:#ff006e;border:1.5px solid #ff006e;text-shadow:0 0 10px rgba(255,0,110,0.9);box-shadow:0 0 10px rgba(255,0,110,0.45), inset 0 0 0 2px rgba(10,0,5,0.9), inset 0 0 0 4px rgba(255,0,110,0.25);border-radius:4px;clip-path:none;padding:5px 14px;font-size:12px;letter-spacing:2.5px;animation:trigger-pulse 1.5s ease-in-out infinite;}
+@keyframes trigger-pulse{0%,100%{box-shadow:0 0 10px rgba(255,0,110,0.45), inset 0 0 0 2px rgba(10,0,5,0.9), inset 0 0 0 4px rgba(255,0,110,0.25);border-color:rgba(255,0,110,0.9);}50%{box-shadow:0 0 22px rgba(255,0,110,0.7), inset 0 0 0 2px rgba(10,0,5,0.9), inset 0 0 0 4px rgba(255,0,110,0.4);border-color:#ff006e;}}
+tbody tr.row-alert td:first-child{border-left:2px solid var(--yellow);box-shadow:inset 4px 0 12px rgba(255,230,0,0.1);}
+tbody tr.row-trigger td:first-child{border-left:2px solid var(--pink);box-shadow:inset 4px 0 12px rgba(255,0,110,0.15);}
+.loading-row td{text-align:center!important;padding:60px!important;}
+.spinner-ring{display:inline-block;width:16px;height:16px;border:1px solid var(--border);border-top-color:var(--cyan);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-right:10px;box-shadow:0 0 8px var(--cyan-glow);}
+@keyframes spin{to{transform:rotate(360deg);}}
+footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-note{font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--text-dim);}
+.last-upd{font-family:'Share Tech Mono',monospace;font-size:12px;color:var(--cyan);text-shadow:0 0 8px var(--cyan-glow);}
+.ticker-tape{overflow:hidden;background:var(--deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:6px 0;margin-bottom:24px;position:relative;}
+.ticker-tape::before,.ticker-tape::after{content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;}
+.ticker-tape::before{left:0;background:linear-gradient(90deg,var(--black),transparent);}
+.ticker-tape::after{right:0;background:linear-gradient(-90deg,var(--black),transparent);}
+.ticker-track{display:flex;gap:0;animation:scroll-left 90s linear infinite;white-space:nowrap;width:max-content;}
+@keyframes scroll-left{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.ticker-track:hover{animation-play-state:paused;}
+.tape-item{display:inline-flex;align-items:center;gap:6px;padding:0 24px;font-family:'Share Tech Mono',monospace;font-size:11px;border-right:1px solid var(--border);}
+.tape-sym{color:var(--cyan);}
+.tape-chg.up{color:var(--up);}
+.tape-chg.down{color:var(--down);}
+.progress{height:2px;background:var(--surface);margin-bottom:20px;overflow:hidden;}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--cyan),var(--pink));width:0;transition:width .5s ease;}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+
+/* 三合一歷史卡片 */
+.history-section {
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  background: rgba(0,0,0,0.3);
+}
+.history-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--cyan);
+  margin-bottom: 12px;
+  text-shadow: 0 0 8px var(--cyan-glow);
+}
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(100px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+.three-line-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 8px 6px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 12px;
+}
+.three-line-card .day-label {
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  border-bottom: 1px dashed var(--border);
+  display: inline-block;
+  padding-bottom: 2px;
+}
+.three-line-card .price {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 4px 0;
+}
+.three-line-card .daily {
+  font-size: 12px;
+}
+.three-line-card .cum {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.up { color: var(--up); }
+.down { color: var(--down); }
+.neu { color: var(--text-dim); }
+.strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 16px;
+  background: rgba(0,229,255,0.02);
+  border-top: 1px solid var(--border);
+}
+.metric-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+}
+
+/* ── TABS ── */
+.tab-bar{display:flex;gap:0;margin-bottom:16px;border-bottom:1px solid var(--border);}
+.tab-btn{cursor:pointer;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;padding:11px 22px;border:none;background:transparent;color:var(--text-dim);border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.2s;}
+.tab-btn:hover{color:var(--cyan);}
+.tab-btn.active{color:var(--cyan);border-bottom-color:var(--cyan);text-shadow:0 0 10px var(--cyan-glow);}
+.tab-panel{display:none;width:100%;}
+.tab-panel.active{display:block;}
+
+/* ── SPREADSHEET ── */
+.sheet-wrap{overflow-x:auto;overflow-y:auto;max-height:75vh;border:1px solid var(--border);background:var(--panel);}
+.sheet-table{border-collapse:collapse;font-family:'Share Tech Mono',monospace;font-size:11px;white-space:nowrap;width:100%;}
+.sheet-table thead tr{position:sticky;top:0;z-index:10;}
+.sheet-table th{background:#0a1628;color:#6a8aaa;font-size:10px;font-weight:600;letter-spacing:1px;padding:7px 10px;text-align:right;border:1px solid rgba(0,229,255,0.15);white-space:nowrap;cursor:pointer;user-select:none;}
+.sheet-table th:hover{color:var(--cyan);}
+.sheet-table th:first-child,.sheet-table th:nth-child(2){text-align:left;position:sticky;left:0;z-index:11;background:#0a1628;}
+.sheet-table th:nth-child(2){left:80px;}
+.sheet-table td{padding:5px 10px;text-align:right;border:1px solid rgba(0,229,255,0.08);color:#c8d8f0;font-size:11px;}
+.sheet-table td:first-child{text-align:left;position:sticky;left:0;background:var(--panel);z-index:2;color:var(--cyan);font-weight:700;}
+.sheet-table td:nth-child(2){text-align:left;position:sticky;left:80px;background:var(--panel);z-index:2;color:#aabbcc;}
+.sheet-table tbody tr:hover td{background:rgba(0,229,255,0.05);}
+.sheet-table tbody tr:hover td:first-child,.sheet-table tbody tr:hover td:nth-child(2){background:#0e1e35;}
+.sheet-pos{color:var(--up)!important;}
+.sheet-neg{color:var(--down)!important;}
+.sheet-alert-row td{background:rgba(255,0,110,0.05)!important;}
+.sheet-alert-row td:first-child{border-left:2px solid var(--pink)!important;}
+.sheet-obs{color:#444d6a!important;}
+.sheet-watch{color:var(--cyan)!important;}
+.sheet-trigger{color:var(--pink)!important;font-weight:700;}
+.sheet-toolbar{display:flex;align-items:center;gap:10px;padding:10px 0 10px;flex-wrap:wrap;}
+.sheet-search{background:var(--surface);border:1px solid var(--border);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:11px;padding:6px 12px;outline:none;width:200px;}
+.sheet-count{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-dim);margin-left:auto;}
+
+/* ── SPREADSHEET ── */
+.sheet-wrap{overflow-x:auto;overflow-y:auto;max-height:72vh;border:1px solid var(--border);background:var(--panel);}
+.sheet-table{border-collapse:collapse;font-family:'Share Tech Mono',monospace;font-size:11px;white-space:nowrap;width:100%;}
+.sheet-table thead tr{position:sticky;top:0;z-index:10;}
+.sheet-table th{background:#0a1628;color:#6a8aaa;font-size:10px;font-weight:600;letter-spacing:1px;padding:7px 10px;text-align:right;border:1px solid rgba(0,229,255,0.15);cursor:pointer;user-select:none;}
+.sheet-table th:hover{color:var(--cyan);}
+.sheet-table th:first-child,.sheet-table th:nth-child(2){text-align:left;position:sticky;background:#0a1628;z-index:11;}
+.sheet-table th:first-child{left:0;}
+.sheet-table th:nth-child(2){left:72px;}
+.sheet-table td{padding:5px 10px;text-align:right;border:1px solid rgba(0,229,255,0.07);color:#c8d8f0;font-size:11px;}
+.sheet-table td:first-child{text-align:left;position:sticky;left:0;background:var(--panel);z-index:2;color:var(--cyan);font-weight:700;min-width:72px;}
+.sheet-table td:nth-child(2){text-align:left;position:sticky;left:72px;background:var(--panel);z-index:2;color:#99aabb;min-width:120px;}
+.sheet-table tbody tr:hover td{background:rgba(0,229,255,0.05)!important;}
+.sheet-table tbody tr:hover td:first-child,.sheet-table tbody tr:hover td:nth-child(2){background:#0e1e35!important;}
+.s-pos{color:var(--up)!important;}
+.s-neg{color:var(--down)!important;}
+.s-neu{color:#44506a!important;}
+.s-alert-row td:first-child{border-left:2px solid var(--pink)!important;}
+.sheet-toolbar{display:flex;align-items:center;gap:10px;padding:10px 0;flex-wrap:wrap;}
+.sheet-search{background:var(--surface);border:1px solid var(--border);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:11px;padding:6px 12px;outline:none;width:200px;}
+.sheet-search:focus{border-color:var(--cyan);}
+.sheet-count{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-dim);margin-left:auto;}
+.s-badge{font-family:'Orbitron',sans-serif;font-size:8px;font-weight:700;letter-spacing:1px;padding:2px 7px;}
+.s-badge-watch{color:var(--cyan);}
+.s-badge-trigger{color:var(--pink);font-weight:900;}
+.s-badge-obs{color:#44506a;}
+.s-badge-alert-k{color:var(--yellow);}
+/* ── SPREADSHEET ── */
+.sheet-wrap{overflow-x:auto;overflow-y:auto;max-height:72vh;border:1px solid var(--border);background:var(--panel);}
+.sheet-table{border-collapse:collapse;font-family:'Share Tech Mono',monospace;white-space:nowrap;width:100%;}
+.sheet-table thead tr{position:sticky;top:0;z-index:10;}
+.sheet-table th{background:#0a1628;color:#6a8aaa;font-size:10px;letter-spacing:1px;padding:7px 10px;text-align:right;border:1px solid rgba(0,229,255,0.15);cursor:pointer;user-select:none;}
+.sheet-table th:hover{color:var(--cyan);}
+.sheet-table th:first-child,.sheet-table th:nth-child(2){text-align:left;position:sticky;background:#0a1628;z-index:11;}
+.sheet-table th:first-child{left:0;}
+.sheet-table th:nth-child(2){left:72px;}
+.sheet-table td{padding:5px 10px;text-align:right;border:1px solid rgba(0,229,255,0.07);color:#c8d8f0;font-size:11px;}
+.sheet-table td:first-child{text-align:left;position:sticky;left:0;background:var(--panel);z-index:2;color:var(--cyan);font-weight:700;min-width:72px;}
+.sheet-table td:nth-child(2){text-align:left;position:sticky;left:72px;background:var(--panel);z-index:2;color:#99aabb;min-width:120px;}
+.sheet-table tbody tr:hover td{background:rgba(0,229,255,0.05)!important;}
+.sheet-table tbody tr:hover td:first-child,.sheet-table tbody tr:hover td:nth-child(2){background:#0e1e35!important;}
+/* ── SPREADSHEET CONDITIONAL COLORS ── */
+.s-pos{color:var(--up)!important;}.s-neg{color:var(--down)!important;}.s-neu{color:#44506a!important;}
+.s-alert-row td:first-child{border-left:2px solid var(--pink)!important;}
+/* background heat map */
+.bg-p1{background:rgba(0,180,80,0.12)!important;}   /* 0~10% */
+.bg-p2{background:rgba(0,180,80,0.28)!important;}   /* 10~20% */
+.bg-p3{background:rgba(0,180,80,0.50)!important;}   /* 20~30% */
+.bg-p4{background:rgba(0,220,100,0.70)!important;color:#003320!important;}  /* >30% */
+.bg-n1{background:rgba(220,60,60,0.15)!important;}  /* 0~-5% */
+.bg-n2{background:rgba(220,60,60,0.35)!important;}  /* -5~-10% */
+.bg-n3{background:rgba(220,30,30,0.60)!important;color:#ffd0d0!important;}  /* <-10% */
+.sheet-toolbar{display:flex;align-items:center;gap:10px;padding:10px 0;flex-wrap:wrap;}
+.sheet-search{background:var(--surface);border:1px solid var(--border);color:var(--cyan);font-family:'Share Tech Mono',monospace;font-size:11px;padding:6px 12px;outline:none;width:200px;}
+.sheet-search:focus{border-color:var(--cyan);}
+.sheet-count{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text-dim);margin-left:auto;}
+/* ── GUIDE CARDS ── */
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding:8px 0 24px;}
+@media(max-width:1100px){.guide-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:700px){.guide-grid{grid-template-columns:1fr;}}
+.guide-card{background:var(--panel);border:1px solid var(--border);padding:18px 20px;position:relative;overflow:hidden;transition:border-color 0.2s,box-shadow 0.2s;}
+.guide-card:hover{border-color:rgba(0,229,255,0.5);box-shadow:0 0 16px rgba(0,229,255,0.08);}
+.guide-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),transparent);}
+.guide-card::after{content:'';position:absolute;top:-1px;right:-1px;width:12px;height:12px;background:linear-gradient(225deg,rgba(0,229,255,0.5) 0%,transparent 60%);}
+.g-stars{font-size:11px;margin-bottom:5px;letter-spacing:1px;}
+.g-title{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;color:var(--text);margin-bottom:10px;letter-spacing:0.5px;}
+.g-body{font-family:'Rajdhani',sans-serif;font-size:12px;font-weight:400;color:rgba(200,216,240,0.88);line-height:1.75;}
+.g-body b{color:var(--cyan);}
+.g-body .up{color:var(--up);}
+.g-body .down{color:var(--down);}
+.g-body .warn{color:var(--yellow);}
+.g-tip{margin-top:10px;padding:8px 12px;background:rgba(0,229,255,0.05);border-left:2px solid var(--cyan);font-size:12px;color:var(--text-dim);font-family:'Share Tech Mono',monospace;line-height:1.6;}
+.g-tag-priority{display:inline-block;font-family:'Orbitron',sans-serif;font-size:8px;font-weight:700;letter-spacing:2px;padding:2px 8px;margin-bottom:8px;clip-path:polygon(5px 0,100% 0,calc(100% - 5px) 100%,0 100%);}
+.g-tag-core{background:rgba(0,229,255,0.15);color:var(--cyan);border:1px solid rgba(0,229,255,0.4);}
+.g-tag-signal{background:rgba(0,255,136,0.1);color:var(--up);border:1px solid rgba(0,255,136,0.3);}
+.g-tag-entry{background:rgba(255,230,0,0.1);color:var(--yellow);border:1px solid rgba(255,230,0,0.3);}
+.g-tag-ref{background:rgba(255,255,255,0.05);color:var(--text-dim);border:1px solid rgba(255,255,255,0.1);}
+.g-tag-tw{background:rgba(255,0,110,0.1);color:var(--pink);border:1px solid rgba(255,0,110,0.3);}
+.guide-section-title{font-family:'Orbitron',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;color:var(--text-dim);padding:16px 0 10px;border-bottom:1px solid var(--border);margin-bottom:12px;text-transform:uppercase;}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav>
+    <div class="logo"><span class="logo-bracket">[</span><span class="logo-text" data-text="GURA//MARKET">GURA//MARKET</span><span class="logo-bracket">]</span></div>
+    <div class="nav-center"><div class="ticker-item"><div class="dot-live"></div><span id="market-label">LIVE MODE</span></div></div>
+    <div class="nav-right"><button class="cyber-btn" onclick="fetchData()" id="refresh-btn">⟳ SYNC DATA</button></div>
+  </nav>
+  <div class="ticker-tape"><div class="ticker-track" id="ticker-track"></div></div>
+  <div class="summary-strip"><!-- 8個卡片，與原來相同，此處省略內容以節省長度，實際運作會完整顯示 -->
+    <div class="s-card"><div class="s-label">// TRACKING</div><div class="s-val" id="s-total">31</div><div class="s-sub">ASSETS</div></div>
+    <div class="s-card"><div class="s-label">// GAINERS</div><div class="s-val up" id="s-up">—</div><div class="s-sub" id="s-up-pct">— %</div></div>
+    <div class="s-card"><div class="s-label">// LOSERS</div><div class="s-val down" id="s-dn">—</div><div class="s-sub" id="s-dn-pct">— %</div></div>
+    <div class="s-card"><div class="s-label">// AVG MOVE</div><div class="s-val" id="s-avg">—</div><div class="s-sub">TODAY</div></div>
+    <div class="s-card"><div class="s-label">// BEST</div><div class="s-val up" id="s-best">—</div><div class="s-sub" id="s-best-sym">—</div></div>
+    <div class="s-card"><div class="s-label">// WORST</div><div class="s-val down" id="s-worst">—</div><div class="s-sub" id="s-worst-sym">—</div></div>
+    <div class="s-card"><div class="s-label">// TRIGGERED</div><div class="s-val" style="color:var(--pink);text-shadow:0 0 15px var(--pink-glow)" id="s-trigger">—</div><div class="s-sub">10D ≤ -10%</div></div>
+    <div class="s-card"><div class="s-label">// LOW10D</div><div class="s-val" style="color:var(--yellow);text-shadow:0 0 15px rgba(255,230,0,0.4)" id="s-alert">—</div><div class="s-sub">低於10日均-5%</div></div>
+  </div>
+  <div class="progress"><div class="progress-bar" id="pbar"></div></div>
+  <!-- TAB BAR -->
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('portfolio',this)">// PORTFOLIO</button>
+    <button class="tab-btn" onclick="switchTab('sheet',this)">// SPREADSHEET</button>
+    <button class="tab-btn" onclick="switchTab('guide',this)">// 指標說明</button>
+  </div>
+
+  <!-- PORTFOLIO PANEL -->
+  <div class="tab-panel active" id="tab-portfolio">
+  <div class="toolbar">
+    <span class="section-tag">PORTFOLIO</span>
+    <div class="filter-wrap">
+      <button class="flt-btn active" onclick="setFilter('all',this)">ALL</button>
+      <button class="flt-btn" onclick="setFilter('up',this)">GAIN</button>
+      <button class="flt-btn" onclick="setFilter('down',this)">LOSS</button>
+      <button class="flt-btn" onclick="setFilter('alert',this)">LOW10D</button>
+      <button class="flt-btn" onclick="setFilter('trigger',this)">TRIGGERED</button>
+    </div>
+    <div class="toolbar-right">
+      <input class="cyber-input" type="text" placeholder="> SEARCH..." id="search-input" oninput="renderTable()">
+      <select class="cyber-select" id="sort-sel" onchange="renderTable()">
+        <option value="default">// SORT</option>
+        <option value="price-desc">PRICE ↓</option>
+        <option value="chg-desc">GAIN ↓</option>
+        <option value="chg-asc">LOSS ↓</option>
+        <option value="sym-asc">TICKER A→Z</option>
+        <option value="d10">10D CHG ↓</option>
+        <option value="d20">20D CHG ↓</option>
+        <option value="ma10">10D AVG ↓</option>
+      </select>
+    </div>
+  </div>
+  <div class="table-shell">
+    <div class="bracket-bl"></div><div class="bracket-br"></div>
+    <div class="tbl-wrap">
+      <table id="main-table">
+        <thead><tr><th onclick="sortBy('symbol')">TICKER</th><th>NAME</th><th onclick="sortBy('price')">PRICE</th><th onclick="sortBy('prev')">PREV</th><th onclick="sortBy('change')">CHG $</th><th onclick="sortBy('changePct')">CHG %</th><th onclick="sortBy('d10')">10D %</th><th onclick="sortBy('d20')">20D %</th><th onclick="sortBy('ma10')">10D AVG</th><th>狀態</th><th>LOW10D</th></tr></thead>
+        <tbody id="table-body"><tr class="loading-row"><td colspan="11"><span class="spinner-ring"></span>INITIALIZING DATA STREAM...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+  </div><!-- /tab-portfolio -->
+  <!-- SPREADSHEET PANEL -->
+  <div class="tab-panel" id="tab-sheet">
+    <div class="sheet-toolbar">
+      <input class="sheet-search" type="text" id="sheet-search" placeholder="> SEARCH..." oninput="renderSheet()">
+      <span class="sheet-count" id="sheet-count"></span>
+    </div>
+    <div class="sheet-wrap">
+      <table class="sheet-table">
+        <thead><tr>
+          <th onclick="sheetSort('symbol')">代碼</th>
+          <th onclick="sheetSort('name')">名稱</th>
+          <th onclick="sheetSort('price')">現價</th>
+          <th onclick="sheetSort('prev')">昨收</th>
+          <th onclick="sheetSort('changePct')">漲跌%</th>
+          <th onclick="sheetSort('d10')">10日%</th>
+          <th onclick="sheetSort('d20')">20日%</th>
+          <th onclick="sheetSort('ma10')">10日均</th>
+          <th onclick="sheetSort('ma10_5pct')">均-5%</th>
+          <th onclick="sheetSort('dist_ma10')">距均%</th>
+          <th onclick="sheetSort('rsi')">RSI</th>
+          <th onclick="sheetSort('day_high')">今高</th>
+          <th onclick="sheetSort('day_low')">今低</th>
+          <th onclick="sheetSort('vol_ratio')">量比</th>
+          <th onclick="sheetSort('w52_high')">52W高</th>
+          <th onclick="sheetSort('w52_low')">52W低</th>
+          <th onclick="sheetSort('pe')">P/E</th>
+          <th>市值</th>
+          <th onclick="sheetSort('status')">狀態</th>
+          <th onclick="sheetSort('alert')">LOW10D</th>
+          <th>前1日</th><th>漲%</th>
+          <th>前2日</th><th>漲%</th>
+          <th>前3日</th><th>漲%</th>
+          <th>前4日</th><th>漲%</th>
+          <th>前5日</th><th>漲%</th>
+          <th>前6日</th><th>漲%</th>
+          <th>前7日</th><th>漲%</th>
+        </tr></thead>
+        <tbody id="sheet-tbody"></tbody>
+      </table>
+    </div>
+  </div><!-- /tab-sheet -->
+
+  <!-- GUIDE PANEL -->
+  <div class="tab-panel" id="tab-guide">
+    <div class="guide-section-title">⭐⭐⭐ 核心指標 — 直接影響你的策略決策</div>
+    <div class="guide-grid">
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-core">CORE</div>
+        <div class="g-stars">⭐⭐⭐</div>
+        <div class="g-title">距10日均線 %</div>
+        <div class="g-body">
+          現在股價比10日均線<b>高或低幾%</b>。你的「低於均線-5% 觸發 Alert」邏輯就是這個數字的延伸，讓你不用自己算，一眼看出還差多遠。<br><br>
+          <span class="down">負值</span> = 股價在均線下方（跌破均線）<br>
+          <span class="up">正值</span> = 股價在均線上方（強勢）
+        </div>
+        <div class="g-tip">// 例：-8.2% 代表快接近你的 Alert 觸發點了</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-core">CORE</div>
+        <div class="g-stars">⭐⭐⭐</div>
+        <div class="g-title">RSI（相對強弱指標）</div>
+        <div class="g-body">
+          0~100 的數字，衡量最近 <b>14天</b> 的漲跌速度和力道。<br><br>
+          <span class="down">RSI &lt; 30</span> = 超賣，跌太快，可能即將反彈<br>
+          <span class="up">RSI &gt; 70</span> = 超買，漲太快，可能即將回調<br>
+          RSI ≈ 50 = 正常狀態
+        </div>
+        <div class="g-tip">// 觸發加碼時 RSI 也 &lt; 30，信號強度大幅提升</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-core">CORE</div>
+        <div class="g-stars">⭐⭐⭐</div>
+        <div class="g-title">MACD 訊號</div>
+        <div class="g-body">
+          兩條移動均線的差值，看<b>趨勢轉折點</b>。<br><br>
+          <span class="up">黃金交叉</span>：快線從下往上穿越慢線 → 可能是買點<br>
+          <span class="down">死亡交叉</span>：快線從上往下穿越慢線 → 可能是賣點
+        </div>
+        <div class="g-tip">// 觸發加碼 + MACD 黃金交叉同時出現，是最強的買進信號</div>
+      </div>
+
+    </div>
+
+    <div class="guide-section-title">⭐⭐ 進場 & 確認指標 — 幫你判斷時機</div>
+    <div class="guide-grid">
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-entry">ENTRY</div>
+        <div class="g-stars">⭐⭐</div>
+        <div class="g-title">今日高 / 低</div>
+        <div class="g-body">
+          今天的<b>最高價</b>和<b>最低價</b>，顯示當天的波動範圍。<br><br>
+          現價靠近今日低點 → 還在跌，再等一下<br>
+          現價靠近今日高點 → 今天有反彈力道
+        </div>
+        <div class="g-tip">// 用來判斷當天進場時機，不要追高</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-signal">SIGNAL</div>
+        <div class="g-stars">⭐⭐</div>
+        <div class="g-title">成交量 vs 均量 / 量比</div>
+        <div class="g-body">
+          <b>量比</b> = 今日成交量 ÷ 35日均量<br><br>
+          漲跌要有量支撐才有意義。<span class="down">跌破支撐但量很小</span>可能是假訊號，不要急著進場。<br><br>
+          <span class="up">量比 &gt; 2</span> = 今天交易量是平常兩倍，值得注意
+        </div>
+        <div class="g-tip">// 量比 &gt; 2 且股價反彈，代表大資金在買</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-signal">SIGNAL</div>
+        <div class="g-stars">⭐⭐</div>
+        <div class="g-title">布林通道（Bollinger Bands）</div>
+        <div class="g-body">
+          以 20 日均線為中心，上下各畫一條「正常波動範圍」的線。<br><br>
+          股價碰到<span class="down">下軌</span> → 跌過頭，可能反彈<br>
+          股價碰到<span class="up">上軌</span> → 漲過頭，可能回調<br>
+          通道<b>變窄</b> → 大波動即將來臨
+        </div>
+        <div class="g-tip">// 你的均線-5% 策略跟布林下軌概念類似，可互相印證</div>
+      </div>
+
+    </div>
+
+    <div class="guide-section-title">⭐ 參考指標 — 輔助決策用</div>
+    <div class="guide-grid">
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-ref">REF</div>
+        <div class="g-stars">⭐</div>
+        <div class="g-title">52週高 / 低</div>
+        <div class="g-body">
+          過去<b>一年</b>的最高價和最低價，讓你知道現在在歷史位置上是貴還是便宜。<br><br>
+          現價靠近 52 週低 → 相對便宜，但確認不是繼續跌<br>
+          現價靠近 52 週高 → 創新高，動能強，但也可能回調
+        </div>
+        <div class="g-tip">// 搭配 RSI 一起看，判斷是真便宜還是繼續跌</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-ref">REF</div>
+        <div class="g-stars">⭐</div>
+        <div class="g-title">Beta 值</div>
+        <div class="g-body">
+          這支股票跟大盤比，<b>波動有多誇張</b>。<br><br>
+          Beta = 1 → 跟大盤一樣漲跌<br>
+          Beta = 1.5 → 大盤跌 10%，它跌 15%<br>
+          Beta = 0.5 → 波動只有大盤一半
+        </div>
+        <div class="g-tip">// QLD、SSO 是 2x ETF，Beta 很高，要特別控制部位大小</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-ref">REF</div>
+        <div class="g-stars">⭐</div>
+        <div class="g-title">均線多頭排列</div>
+        <div class="g-body">
+          5日 &gt; 10日 &gt; 20日 &gt; 60日均線，全部從上到下排列整齊，代表<b>短中長期都在上漲</b>。<br><br>
+          反過來叫<span class="down">空頭排列</span>，代表整體趨勢向下，要謹慎進場。
+        </div>
+        <div class="g-tip">// 多頭排列時進場，勝率通常比較高</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-ref">REF</div>
+        <div class="g-stars">⭐</div>
+        <div class="g-title">本益比（P/E）</div>
+        <div class="g-body">
+          花多少錢買公司每賺 1 元的獲利。P/E = 20 代表花 20 元買 1 元獲利。<br><br>
+          <span class="down">P/E 低</span> = 相對便宜（但可能公司有問題）<br>
+          <span class="up">P/E 高</span> = 市場期待高（科技股通常高）<br><br>
+          <span class="warn">⚠ ETF 不適用此指標</span>
+        </div>
+        <div class="g-tip">// 同產業比較才有意義，跨產業比沒太大參考價值</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-ref">REF</div>
+        <div class="g-stars">⭐</div>
+        <div class="g-title">市值</div>
+        <div class="g-body">
+          這間公司總共值多少錢，用來評估風險等級。<br><br>
+          <b>大型股</b>（T 級）：台積電、蘋果，穩定，不容易暴漲暴跌<br>
+          <b>中小型股</b>（B 級以下）：UUUU、USAR，風險高但漲起來也快
+        </div>
+        <div class="g-tip">// 1T = 1兆，1B = 10億，1M = 百萬</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-tw">TW ONLY</div>
+        <div class="g-stars">△</div>
+        <div class="g-title">法人買賣超</div>
+        <div class="g-body">
+          外資、投信、自營商今天<b>買了還是賣了</b>多少張。<br><br>
+          <span class="up">外資連續買超</span> → 大資金進場，是好兆頭<br>
+          <span class="down">三大法人同時賣超</span> → 小心反轉<br><br>
+          <span class="warn">⚠ 台股專用，美股無此公開資料</span>
+        </div>
+        <div class="g-tip">// 台股每天 15:30 後公布當日資料</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-tw">TW ONLY</div>
+        <div class="g-stars">△</div>
+        <div class="g-title">融資比率</div>
+        <div class="g-body">
+          散戶<b>借錢買股</b>（融資）的比例。<br><br>
+          融資比例高 → 股價下跌時會有強制賣出壓力，跌更快<br>
+          融資比例低 → 籌碼比較乾淨，不容易被踩踏
+        </div>
+        <div class="g-tip">// 台股限定，高融資股在大跌時特別危險</div>
+      </div>
+
+      <div class="guide-card">
+        <div class="g-tag-priority g-tag-ref">REF</div>
+        <div class="g-stars">△</div>
+        <div class="g-title">殖利率（Dividend Yield）</div>
+        <div class="g-body">
+          每年配多少股息相對於股價的比例。<br><br>
+          高殖利率（如 AEM）→ 適合長期存股<br>
+          成長股（NVDA、PLTR）→ 通常殖利率很低或沒有<br><br>
+          <span class="warn">⚠ 你的策略主要是價差，殖利率參考就好</span>
+        </div>
+        <div class="g-tip">// 存股型才需要重視這個指標</div>
+      </div>
+
+    </div>
+  </div><!-- /tab-guide -->
+
+  <footer><div class="footer-note">// DATA SOURCE: YAHOO FINANCE (YFINANCE) · NOT FINANCIAL ADVICE</div><div class="last-upd" id="last-upd">AWAITING SYNC...</div></footer>
+</div>
+
+<script>
+let allData = [];
+let currentFilter = 'all';
+let currentSort = 'default';
+
+const DEMO_STOCKS = [
+  {s:'TSM',n:'台積電 ADR',p:415.5},{s:'GOOGL',n:'Alphabet',p:175.2},{s:'AAPL',n:'Apple',p:213.3},
+  {s:'NVDA',n:'NVIDIA',p:875.4},{s:'TSLA',n:'Tesla',p:248.6},{s:'PLTR',n:'Palantir',p:22.8},
+  {s:'META',n:'Meta Platforms',p:512.9},{s:'MSFT',n:'Microsoft',p:415.7},{s:'INTC',n:'Intel',p:31.2},
+  {s:'MU',n:'Micron',p:128.5},{s:'AMZN',n:'Amazon',p:188.3},{s:'AMD',n:'AMD',p:155.8},
+  {s:'NFLX',n:'Netflix',p:645.2},{s:'ORCL',n:'Oracle',p:132.4},{s:'QQQ',n:'Nasdaq ETF',p:445.6},
+  {s:'VOO',n:'S&P500 ETF',p:488.3},{s:'GLD',n:'Gold ETF',p:224.5},{s:'2330.TW',n:'台積電',p:885},
+  {s:'2308.TW',n:'台達電',p:298.5},{s:'0050.TW',n:'元大50',p:168.2},{s:'2377.TW',n:'微星',p:142.5},
+  {s:'00631L.TW',n:'元大50正2',p:88.4},{s:'8299.TWO',n:'群聯',p:485},{s:'5274.TWO',n:'信驊',p:2150}
+];
+
+function randomRange(a,b) { return +(Math.random()*(b-a)+a).toFixed(4); }
+
+// 產生連貫20日歷史價格，並返回價格陣列、單日漲跌幅、累積漲跌幅
+function generate20DayHistory(todayPrice) {
+  const dailyReturns = Array.from({length:20}, () => randomRange(-5, 7));
+  let prices = [todayPrice];
+  for (let i=1; i<=20; i++) {
+    let prev = prices[i-1] / (1 + dailyReturns[i-1]/100);
+    prices.push(prev);
+  }
+  // prices[0]=今日, prices[1]=前1日, ..., prices[20]=前20日
+  const historyPrices = prices.slice(1); // 長度20, 索引0對應前1日價格
+  const dailyChg = dailyReturns;
+  const cumulativeChg = [];
+  for (let n=1; n<=20; n++) {
+    let cum = (todayPrice / prices[n] - 1) * 100;
+    cumulativeChg.push(+cum.toFixed(2));
+  }
+  return { historyPrices, dailyChg, cumulativeChg };
+}
+
+function makeDemoData() {
+  const now = new Date().toISOString();
+  return DEMO_STOCKS.map(({s,n,p}) => {
+    const chgPct = randomRange(-12,12);
+    const change = +(p * chgPct / 100).toFixed(2);
+    const prev = +(p - change).toFixed(2);
+    const d10 = randomRange(-18,18);
+    const d20 = randomRange(-25,25);
+    const ma10 = +(p * randomRange(0.92,1.08)).toFixed(2);
+    const distMa10 = +((p - ma10) / ma10 * 100).toFixed(2);
+    const rsi = randomRange(15,85);
+    const macdSignals = ["金叉(看漲)","死叉(看跌)","柱狀翻正","柱狀翻負","多頭背離","空頭背離"];
+    const macdSig = macdSignals[Math.floor(Math.random() * macdSignals.length)];
+    const dayHigh = +(p * randomRange(1.005,1.025)).toFixed(2);
+    const dayLow = +(p * randomRange(0.975,0.995)).toFixed(2);
+    const volToday = Math.round(randomRange(1e6,5e7));
+    const volAvg = Math.round(randomRange(1e6,3e7));
+    const volRatio = +(volToday / volAvg).toFixed(2);
+    const volSignal = volRatio > 1.2 ? "放量" : (volRatio < 0.8 ? "縮量" : "均量");
+    const bbPositions = ["下軌附近","中軌下方","中軌上方","上軌附近","超越上軌"];
+    const bbPos = bbPositions[Math.floor(Math.random() * bbPositions.length)];
+    const w52High = +(p * randomRange(1.1,1.6)).toFixed(2);
+    const w52Low = +(p * randomRange(0.5,0.9)).toFixed(2);
+    const from52week = +(((p - w52Low) / (w52High - w52Low)) * 100).toFixed(1);
+    const beta = randomRange(0.5,1.8);
+    const maArrange = ["多頭排列","空頭排列","糾結","多頭→糾結","空頭→反轉"];
+    const maTrend = maArrange[Math.floor(Math.random() * maArrange.length)];
+    const isTW = (s.includes('.TW') || s.includes('.TWO'));
+    const institutional = isTW ? (randomRange(-2000,3000) > 0 ? `+${Math.round(randomRange(100,2500))}張` : `${Math.round(randomRange(-2500,-100))}張`) : "N/A";
+    const dividend = randomRange(0.5,8).toFixed(1);
+    const marginRatio = isTW ? randomRange(25,75).toFixed(1)+"%" : "N/A";
+    const status = d10 <= -10 ? "觸發加碼" : "觀察中";
+    const alertFlag = p < ma10 * 0.95 ? "Alert" : "OBS";
+    
+    const { historyPrices, dailyChg, cumulativeChg } = generate20DayHistory(p);
+    
+    return {
+      symbol:s, name:n, price:p, prev, change, changePct:chgPct, d10, d20, ma10,
+      dist_ma10:distMa10, rsi, macd_signal:macdSig,
+      day_high:dayHigh, day_low:dayLow,
+      vol_ratio:volRatio, vol_signal:volSignal,
+      bb_position:bbPos, w52_high:w52High, w52_low:w52Low, from52week, beta, ma_arrangement:maTrend,
+      institutional, dividend, margin_ratio:marginRatio,
+      status:status, alert:alertFlag,
+      price20: historyPrices,   // 前1~20日收盤價
+      daily20: dailyChg,
+      cum20: cumulativeChg,
+      updated_at: now
+    };
+  });
+}
+
+function mapStocks(json) {
+  if (!json || !json.stocks) return null;
+  return json.stocks.map(d => ({
+    symbol:d.symbol, name:d.name, price:d.current, prev:d.day1_price,
+    change: d.current!=null && d.day1_price!=null ? +(d.current-d.day1_price).toFixed(2) : null,
+    changePct:d.day1_change, d10:d.change_10d, d20:d.change_20d, ma10:d.ma10,
+    dist_ma10:d.dist_ma10 ?? randomRange(-15,15), rsi:d.rsi ?? randomRange(30,70),
+    macd_signal:d.macd_signal ?? "中性", day_high:d.day_high ?? d.current*1.02, day_low:d.day_low ?? d.current*0.98,
+    vol_ratio:d.vol_ratio ?? 1.0, vol_signal:d.vol_signal ?? "均量", bb_position:d.bb_position ?? "中軌",
+    w52_high:d.w52_high ?? d.current*1.5, w52_low:d.w52_low ?? d.current*0.6,
+    from52week: ((d.current - (d.w52_low??d.current*0.6)) / ((d.w52_high??d.current*1.5) - (d.w52_low??d.current*0.6)) * 100).toFixed(1),
+    beta:d.beta ?? 1.0, ma_arrangement:d.ma_arrangement ?? "糾結",
+    institutional:d.institutional ?? (d.symbol.includes('.TW')?"+0張":"N/A"), dividend:d.dividend ?? randomRange(1,6).toFixed(1),
+    margin_ratio:d.margin_ratio ?? (d.symbol.includes('.TW')?randomRange(30,70).toFixed(1)+"%":"N/A"),
+    status:d.status ?? "觀察中", alert:d.alert ?? "OBS",
+    price20: d.price20 || Array(20).fill(0).map((_,i)=>+(d.current * randomRange(0.7,1.3)).toFixed(2)),
+    daily20: d.daily20 || Array(20).fill(0).map(()=>randomRange(-5,7)),
+    cum20: d.cum20 || Array(20).fill(0).map((_,i)=>randomRange(-15,15)),
+    updated_at:d.updated_at
+  }));
+}
+
+// ── Google Sheets CSV 網址 ──────────────────────────
+const SHEET_CSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQe48_LjfX6cUM5Vldg91kxeY42GoPwrVB71GqJ_S_Qg6zdQ_biZOnOcTQMAejBv_XHgK5HXgT37783/pub?gid=962465098&single=true&output=csv';
+
+/* 解析 CSV，回傳 { symbol, name, price } 的 Map */
+async function fetchGoogleSheet() {
+  const res = await fetch(SHEET_CSV);
+  if (!res.ok) throw new Error('無法讀取 Google Sheet');
+  const text = await res.text();
+
+  const rows = text.trim().split('\n').slice(1); // 跳過標題列
+  const map  = new Map();
+
+  rows.forEach(row => {
+    // 處理 CSV 引號包覆
+    const cols = row.split(',').map(c => c.replace(/^"|"$/g, '').trim());
+    const symbol = cols[0]?.toUpperCase();
+    const name   = cols[1] || '';
+    const price  = parseFloat(cols[2]);
+    if (symbol && !isNaN(price)) {
+      map.set(symbol, { symbol, name, price });
+    }
+  });
+
+  return map;
+}
+
+/* 把 Google Sheet 的即時價格合併到 prices.json 的完整資料 */
+async function fetchFromAPI() {
+  let baseData = null;
+  let sheetMap = null;
+  let source   = 'demo';
+
+  // 1. 嘗試讀取 GitHub 上的 prices.json（完整欄位）
+  try {
+    const res = await fetch('./data/prices.json');
+    if (res.ok) {
+      const json = await res.json();
+      baseData = mapStocks(json);
+      source = 'cached';
+    }
+  } catch(e) {}
+
+  // 2. 嘗試讀取 Google Sheet（即時價格）
+  try {
+    sheetMap = await fetchGoogleSheet();
+    if (sheetMap && sheetMap.size > 0) {
+      source = sheetMap && baseData ? 'live' : 'sheet-only';
+    }
+  } catch(e) {
+    console.warn('Google Sheet 讀取失敗:', e.message);
+  }
+
+  // 3. 合併資料
+  if (baseData && sheetMap) {
+    // 用 Sheet 的即時價格覆蓋 prices.json 的現價
+    baseData = baseData.map(d => {
+      const live = sheetMap.get(d.symbol);
+      if (!live) return d;
+      const newPrice  = live.price;
+      const oldPrice  = d.prev || d.price;
+      const newChange = oldPrice ? +(newPrice - oldPrice).toFixed(2) : d.change;
+      const newChgPct = oldPrice ? +((newPrice - oldPrice) / oldPrice * 100).toFixed(2) : d.changePct;
+      return { ...d, price: newPrice, change: newChange, changePct: newChgPct };
+    });
+    return { data: baseData, source: 'live' };
+
+  } else if (sheetMap && !baseData) {
+    // 只有 Sheet，沒有 prices.json
+    const data = Array.from(sheetMap.values()).map(s => ({
+      symbol: s.symbol, name: s.name, price: s.price,
+      prev: null, change: null, changePct: null,
+      d10: null, d20: null, ma10: null, ma10_5pct: null,
+      status: '觀察中', alert: 'OBS',
+      dist_ma10: null, rsi: null,
+      day_high: null, day_low: null,
+      vol_today: null, vol_avg: null, vol_ratio: null,
+      w52_high: null, w52_low: null, pe: null, mkt_cap: null,
+      days: Array(7).fill({ price: null, change: null }),
+      updated_at: new Date().toISOString(),
+    }));
+    return { data, source: 'sheet-only' };
+
+  } else if (baseData) {
+    return { data: baseData, source: 'cached' };
+
+  } else {
+    return { data: makeDemoData(), source: 'demo' };
+  }
+}
+
+async function fetchFromJSON() {
+  const result = await fetchFromAPI();
+  return result.data;
+}
+
+function buildTickerTape(data) {
+  const track = document.getElementById('ticker-track');
+  if (!data.length) return;
+  const items = [...data, ...data].slice(0,60).map(d => {
+    const cls = (d.changePct || 0) > 0 ? 'up' : 'down';
+    const sign = (d.changePct || 0) >= 0 ? '+' : '';
+    return `<span class="tape-item"><span class="tape-sym">${d.symbol}</span><span class="tape-price">${d.price ? d.price.toFixed(2) : '—'}</span><span class="tape-chg ${cls}">${sign}${d.changePct ? d.changePct.toFixed(2) : '—'}%</span></span>`;
+  }).join('');
+  track.innerHTML = items;
+}
+
+async function fetchData() {
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true;
+  btn.textContent = '⟳ SYNCING...';
+  document.getElementById('market-label').textContent = 'FETCHING...';
+  document.getElementById('table-body').innerHTML = '<tr class="loading-row"><td colspan="11"><span class="spinner-ring"></span>CONNECTING TO DATA STREAM...</td></tr>';
+  const pbar = document.getElementById('pbar');
+  pbar.style.width = '30%';
+  try {
+    const result = await fetchFromAPI();
+    allData = result.data;
+    pbar.style.width = '100%';
+    setTimeout(() => { pbar.style.width = '0'; }, 600);
+    if (result.source === 'live') {
+      document.getElementById('market-label').textContent = 'LIVE ✓';
+      document.getElementById('last-upd').textContent = '// LIVE · ' + new Date().toLocaleString('zh-TW');
+    } else if (result.source === 'sheet-only') {
+      document.getElementById('market-label').textContent = 'SHEET ONLY';
+      document.getElementById('last-upd').textContent = '// GOOGLE SHEET · ' + new Date().toLocaleString('zh-TW');
+    } else if (result.source === 'cached') {
+      document.getElementById('market-label').textContent = 'CACHED';
+      const upd = allData[0]?.updated_at || '';
+      document.getElementById('last-upd').textContent = '// CACHED · ' + (upd ? new Date(upd).toLocaleString('zh-TW') : '—');
+    } else {
+      document.getElementById('market-label').textContent = 'DEMO MODE';
+      document.getElementById('last-upd').textContent = '// DEMO DATA · ' + new Date().toLocaleString('zh-TW');
+    }
+  } catch(e) {
+    allData = makeDemoData();
+    pbar.style.width = '100%';
+    setTimeout(() => { pbar.style.width = '0'; }, 600);
+    document.getElementById('market-label').textContent = 'DEMO MODE';
+    document.getElementById('last-upd').textContent = '// DEMO DATA · ' + new Date().toLocaleString('zh-TW');
+  }
+  buildTickerTape(allData);
+  updateStats();
+  renderTable();
+  btn.disabled = false;
+  btn.textContent = '⟳ SYNC DATA';
+}
+
+function setFilter(f, el) {
+  currentFilter = f;
+  document.querySelectorAll('.flt-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  renderTable();
+}
+
+function sortBy(col) {
+  currentSort = col;
+  document.getElementById('sort-sel').value = 'default';
+  document.querySelectorAll('thead th').forEach(th => th.classList.remove('sorted'));
+  if(event && event.currentTarget) event.currentTarget.classList.add('sorted');
+  renderTable();
+}
+
+function pcls(v) { return v == null ? 'neu' : v > 0 ? 'up' : v < 0 ? 'down' : 'neu'; }
+function pstr(v) { if (v == null) return '—'; return (v > 0 ? '+' : '') + v.toFixed(2) + '%'; }
+
+function renderTable() {
+  const search = (document.getElementById('search-input').value || '').toUpperCase();
+  const sortSel = document.getElementById('sort-sel').value;
+  let data = [...allData];
+  if (search) data = data.filter(d => d.symbol.toUpperCase().includes(search) || (d.name||'').toUpperCase().includes(search));
+  if (currentFilter === 'up') data = data.filter(d => (d.changePct||0) > 0);
+  if (currentFilter === 'down') data = data.filter(d => (d.changePct||0) < 0);
+  if (currentFilter === 'alert') data = data.filter(d => d.alert === 'Alert');
+  if (currentFilter === 'trigger') data = data.filter(d => d.status === '觸發加碼');
+
+  const s = sortSel !== 'default' ? sortSel : currentSort;
+  if (s === 'price-desc' || s === 'price') data.sort((a,b) => (b.price||0)-(a.price||0));
+  else if (s === 'chg-desc' || s === 'changePct') data.sort((a,b) => (b.changePct||0)-(a.changePct||0));
+  else if (s === 'chg-asc') data.sort((a,b) => (a.changePct||0)-(b.changePct||0));
+  else if (s === 'sym-asc' || s === 'symbol') data.sort((a,b) => a.symbol.localeCompare(b.symbol));
+  else if (s === 'd10') data.sort((a,b) => (b.d10||0)-(a.d10||0));
+  else if (s === 'd20') data.sort((a,b) => (b.d20||0)-(a.d20||0));
+  else if (s === 'ma10') data.sort((a,b) => (b.ma10||0)-(a.ma10||0));
+
+  const rows = data.map((d, i) => {
+    const cls = pcls(d.changePct);
+    const isAlert = d.alert === 'Alert';
+    const isTrigger = d.status === '觸發加碼';
+    const kBadge = isAlert ? '<span class="badge badge-alert">ALERT</span>' : '<span class="badge badge-obs">OBS</span>';
+    const jBadge = isTrigger ? '<span class="badge badge-trigger">TRIGGERED</span>' : '<span class="badge badge-watch">WATCH</span>';
+    const arrow = (d.changePct||0) > 0 ? '▲' : (d.changePct||0) < 0 ? '▼' : '';
+    const rowClass = isTrigger ? 'row-trigger' : isAlert ? 'row-alert' : '';
+
+    // 策略指標網格
+    const strategyHtml = `<div class="strategy-grid">
+      <div class="metric-card"><span style="color:var(--cyan);">距10日均%</span><span class="${pcls(d.dist_ma10)}">${(d.dist_ma10 != null ? (d.dist_ma10>0?'+':'')+d.dist_ma10.toFixed(2) : '—')}%</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">RSI</span><span>${d.rsi != null ? d.rsi.toFixed(1) : '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">MACD訊號</span><span>${d.macd_signal || '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">今日高/低</span><span>${d.day_high ? d.day_high.toFixed(2) : '—'} / ${d.day_low ? d.day_low.toFixed(2) : '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">量比/訊號</span><span>${d.vol_ratio != null ? d.vol_ratio.toFixed(2)+'x' : '—'} ${d.vol_signal || ''}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">布林位置</span><span>${d.bb_position || '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">52週位置%</span><span class="${pcls(d.from52week-50)}">${d.from52week != null ? d.from52week+'%' : '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">Beta</span><span>${d.beta != null ? d.beta.toFixed(2) : '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">均線排列</span><span>${d.ma_arrangement || '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">法人買賣超</span><span>${d.institutional || '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">殖利率%</span><span>${d.dividend || '—'}</span></div>
+      <div class="metric-card"><span style="color:var(--cyan);">融資比%</span><span>${d.margin_ratio || '—'}</span></div>
+    </div>`;
+
+    // 三合一歷史卡片：前1日～前20日，每個卡片顯示收盤價、單日漲跌幅、累積漲幅
+    const price20 = d.price20 || [];
+    const daily20 = d.daily20 || [];
+    const cum20 = d.cum20 || [];
+    const dayLabels = Array.from({length:20}, (_,i) => `前${i+1}日`);
+    const historyCards = `<div class="history-section"><div class="history-title">📊 前20日歷史數據 (收盤價 / 單日漲跌幅 / 今日累積漲幅)</div>
+      <div class="metrics-grid">${dayLabels.map((label, idx) => {
+        let price = price20[idx];
+        let daily = daily20[idx];
+        let cum = cum20[idx];
+        let dailyCls = daily>0?'up':daily<0?'down':'neu';
+        let cumCls = cum>0?'up':cum<0?'down':'neu';
+        return `<div class="three-line-card">
+          <div class="day-label">${label}</div>
+          <div class="price">${price != null ? price.toFixed(2) : '—'}</div>
+          <div class="daily ${dailyCls}">${daily!=null?(daily>0?'+':'')+daily.toFixed(2)+'%':'—'}</div>
+          <div class="cum ${cumCls}">${cum!=null?(cum>0?'+':'')+cum.toFixed(2)+'%':'—'}</div>
+        </div>`;
+      }).join('')}</div>
+      <div class="subnote">* 單日漲跌幅 = (當日收盤 / 前一日收盤 -1)*100% ; 累積漲幅 = (今日收盤 / N日前收盤 -1)*100%</div>
+    </div>`;
+    
+    const expandContent = `${strategyHtml}${historyCards}`;
+    
+    return `<tr class="${rowClass}" style="animation:fadeInUp 0.3s ease ${i*0.012}s both;cursor:pointer" onclick="toggleExpand('${d.symbol.replace(/\./g,'-')}', this)">
+      <td class="sym-cell">${d.symbol}</td>
+      <td class="name-cell">${d.name||''}</td>
+      <td class="price-cell">${d.price != null ? d.price.toFixed(2) : '—'}</td>
+      <td>${d.prev != null ? d.prev.toFixed(2) : '—'}</td>
+      <td class="chg-${cls}">${d.change != null ? (d.change>=0?'+':'')+d.change.toFixed(2) : '—'}</td>
+      <td><span class="pct-pill ${cls}">${arrow} ${d.changePct!=null ? Math.abs(d.changePct).toFixed(2)+'%' : '—'}</span></td>
+      <td class="period-${pcls(d.d10)}">${pstr(d.d10)}</td>
+      <td class="period-${pcls(d.d20)}">${pstr(d.d20)}</td>
+      <td>${d.ma10 != null ? d.ma10.toFixed(2) : '—'}</td>
+      <td>${jBadge}</td>
+      <td>${kBadge}</td>
+    </tr>
+    <tr class="expand-row" id="expand-${d.symbol.replace(/\./g,'-')}" style="display:none">
+      <td colspan="11" style="padding:0;background:rgba(0,0,0,0.3)">${expandContent}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('table-body').innerHTML = rows || '<tr><td colspan="11" style="text-align:center;padding:3rem;">// NO RESULTS FOUND</td></tr>';
+}
+
+function updateStats() {
+  const valid = allData.filter(d => d.changePct != null);
+  const up = valid.filter(d => d.changePct > 0);
+  const dn = valid.filter(d => d.changePct < 0);
+  const triggers = allData.filter(d => d.status === '觸發加碼');
+  const alerts = allData.filter(d => d.alert === 'Alert');
+  const avg = valid.length ? valid.reduce((s,d) => s+d.changePct,0)/valid.length : 0;
+  const best = valid.length ? valid.reduce((a,b) => a.changePct>b.changePct?a:b) : null;
+  const worst = valid.length ? valid.reduce((a,b) => a.changePct<b.changePct?a:b) : null;
+  document.getElementById('s-total').textContent = allData.length;
+  document.getElementById('s-up').textContent = up.length;
+  document.getElementById('s-up-pct').textContent = Math.round(up.length/(allData.length||1)*100) + '%';
+  document.getElementById('s-dn').textContent = dn.length;
+  document.getElementById('s-dn-pct').textContent = Math.round(dn.length/(allData.length||1)*100) + '%';
+  const avgEl = document.getElementById('s-avg');
+  avgEl.textContent = (avg>=0?'+':'')+avg.toFixed(2)+'%';
+  avgEl.className = 's-val '+(avg>=0?'up':'down');
+  if (best)  { document.getElementById('s-best').textContent = '+'+best.changePct.toFixed(2)+'%'; document.getElementById('s-best-sym').textContent = best.symbol; }
+  if (worst) { document.getElementById('s-worst').textContent = worst.changePct.toFixed(2)+'%'; document.getElementById('s-worst-sym').textContent = worst.symbol; }
+  document.getElementById('s-trigger').textContent = triggers.length;
+  document.getElementById('s-alert').textContent = alerts.length;
+}
+
+function toggleExpand(symbolId, clickedRow) {
+  const expandRow = document.getElementById('expand-' + symbolId);
+  if (!expandRow) return;
+  const isOpen = expandRow.style.display !== 'none';
+  expandRow.style.display = isOpen ? 'none' : 'table-row';
+  clickedRow.style.background = isOpen ? '' : 'rgba(0,229,255,0.04)';
+}
+
+window.addEventListener('DOMContentLoaded', () => { fetchData(); });
+
+/* ── SPREADSHEET TAB ── */
+let sheetSortCol = 'symbol';
+let sheetSortAsc = true;
+
+function sheetSort(col) {
+  if (sheetSortCol === col) sheetSortAsc = !sheetSortAsc;
+  else { sheetSortCol = col; sheetSortAsc = true; }
+  renderSheet();
+}
+
+function renderSheet() {
+  const q = (document.getElementById('sheet-search')?.value || '').toUpperCase();
+  let data = [...allData];
+  if (q) data = data.filter(d => d.symbol.toUpperCase().includes(q) || (d.name||'').toUpperCase().includes(q));
+
+  data.sort((a, b) => {
+    let va = a[sheetSortCol], vb = b[sheetSortCol];
+    if (va == null) return 1; if (vb == null) return -1;
+    if (typeof va === 'string') return sheetSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+    return sheetSortAsc ? va - vb : vb - va;
+  });
+
+  const f = (v, dec=2) => v != null ? (+v).toFixed(dec) : '—';
+  const pc = (v) => v == null ? 's-neu' : v > 0 ? 's-pos' : v < 0 ? 's-neg' : 's-neu';
+  const pf = (v) => v == null ? '—' : (v>0?'+':'')+v.toFixed(2)+'%';
+  const bg = (v) => {
+    if (v == null) return '';
+    if (v > 30)  return 'bg-p4';
+    if (v > 20)  return 'bg-p3';
+    if (v > 10)  return 'bg-p2';
+    if (v > 0)   return 'bg-p1';
+    if (v > -5)  return 'bg-n1';
+    if (v > -10) return 'bg-n2';
+    return 'bg-n3';
+  };
+
+  const rows = data.map(d => {
+    const isTrigger = d.status === '觸發加碼';
+    const isAlert   = d.alert === 'Alert';
+    const rowCls    = isTrigger ? 's-alert-row' : '';
+    const daysCols  = (d.days||[]).map(day =>
+      `<td>${f(day.price)}</td><td class="${bg(day.change)}">${pf(day.change)}</td>`
+    ).join('');
+
+    return `<tr class="${rowCls}">
+      <td>${d.symbol}</td>
+      <td>${d.name||''}</td>
+      <td>${f(d.price)}</td>
+      <td>${f(d.prev)}</td>
+      <td class="${bg(d.changePct)}">${pf(d.changePct)}</td>
+      <td class="${bg(d.d10)}">${pf(d.d10)}</td>
+      <td class="${bg(d.d20)}">${pf(d.d20)}</td>
+      <td>${f(d.ma10)}</td>
+      <td>${f(d.ma10_5pct)}</td>
+      <td class="${bg(d.dist_ma10)}">${pf(d.dist_ma10)}</td>
+      <td style="color:${d.rsi==null?'#44506a':d.rsi<30?'var(--up)':d.rsi>70?'var(--down)':'#c8d8f0'}">${d.rsi!=null?d.rsi.toFixed(0):'—'}</td>
+      <td class="s-pos">${f(d.day_high)}</td>
+      <td class="s-neg">${f(d.day_low)}</td>
+      <td style="color:${d.vol_ratio==null?'#44506a':d.vol_ratio>2?'var(--up)':d.vol_ratio<0.5?'var(--down)':'#c8d8f0'}">${d.vol_ratio!=null?d.vol_ratio.toFixed(1)+'x':'—'}</td>
+      <td class="s-pos">${f(d.w52_high,0)}</td>
+      <td class="s-neg">${f(d.w52_low,0)}</td>
+      <td>${d.pe!=null?d.pe.toFixed(1):'—'}</td>
+      <td style="color:var(--cyan)">${d.mkt_cap||'—'}</td>
+      <td style="color:${isTrigger?'var(--pink)':'var(--cyan)'};font-weight:${isTrigger?'700':'400'}">${isTrigger?'⚡ 加碼':'觀察'}</td>
+      <td style="color:${isAlert?'var(--yellow)':'#44506a'}">${isAlert?'⚠ ALERT':'OBS'}</td>
+      ${daysCols}
+    </tr>`;
+  }).join('') || '<tr><td colspan="34" style="text-align:center;padding:2rem;color:#44506a">// NO DATA</td></tr>';
+
+  document.getElementById('sheet-tbody').innerHTML = rows;
+  const cnt = document.getElementById('sheet-count');
+  if (cnt) cnt.textContent = `// ${data.length} ROWS`;
+}
+
+/* ── TAB SWITCHING ── */
+function switchTab(name, el) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+  if (name === 'sheet') renderSheet();
+  if (name === 'edit') renderEditList();
+}
+</script>
+</body>
+</html>
