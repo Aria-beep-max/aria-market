@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-:root {
+:root, [data-theme="dark"] {
   --black: #04050d; --deep: #080c18; --surface: #0c1120; --panel: #0f1628;
   --cyan: #00e5ff; --cyan-dim: rgba(0,229,255,0.12); --cyan-glow: rgba(0,229,255,0.35);
   --pink: #ff006e; --pink-dim: rgba(255,0,110,0.12); --pink-glow: rgba(255,0,110,0.35);
@@ -16,6 +16,117 @@
   --down: #ff5580; --down-glow: rgba(255,60,110,0.25);
   --text: #dde8f8; --text-dim: #3a4a6a; --border: rgba(0,229,255,0.25); --border-bright: rgba(0,229,255,0.6);
 }
+
+[data-theme="light"] {
+  --black: #e8eef5; --deep: #d6dfeb; --surface: #f0f4f9; --panel: #ffffff;
+  --cyan: #0088cc; --cyan-dim: rgba(0,136,204,0.10); --cyan-glow: rgba(0,136,204,0.30);
+  --pink: #d6336c; --pink-dim: rgba(214,51,108,0.10); --pink-glow: rgba(214,51,108,0.30);
+  --yellow: #d97700; --yellow-dim: rgba(217,119,0,0.10);
+  --green: #2b8a3e; --up: #2b8a3e; --up-glow: rgba(43,138,62,0.25);
+  --down: #c9184a; --down-glow: rgba(201,24,74,0.25);
+  --text: #2a3a55; --text-dim: #8a99b0; --border: rgba(0,136,204,0.25); --border-bright: rgba(0,136,204,0.55);
+}
+
+[data-theme="light"] body::before { display: none; }
+[data-theme="light"] body {
+  background: #e8eef5;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Light theme font override - use Arial everywhere */
+[data-theme="light"] *,
+[data-theme="light"] body,
+[data-theme="light"] .logo,
+[data-theme="light"] .logo-text,
+[data-theme="light"] .nav-center,
+[data-theme="light"] .cyber-btn,
+[data-theme="light"] .s-label,
+[data-theme="light"] .s-val,
+[data-theme="light"] .s-sub,
+[data-theme="light"] .section-tag,
+[data-theme="light"] .flt-btn,
+[data-theme="light"] .cyber-input,
+[data-theme="light"] .cyber-select,
+[data-theme="light"] thead th,
+[data-theme="light"] tbody td,
+[data-theme="light"] .sym-cell,
+[data-theme="light"] .name-cell,
+[data-theme="light"] .pct-pill,
+[data-theme="light"] .badge,
+[data-theme="light"] .footer-note,
+[data-theme="light"] .last-upd,
+[data-theme="light"] .tape-item,
+[data-theme="light"] .tab-btn,
+[data-theme="light"] .guide-tag,
+[data-theme="light"] .guide-title,
+[data-theme="light"] .guide-body,
+[data-theme="light"] .g-tag-priority,
+[data-theme="light"] .g-title,
+[data-theme="light"] .g-body,
+[data-theme="light"] .g-tip,
+[data-theme="light"] .guide-section-title,
+[data-theme="light"] .sheet-table,
+[data-theme="light"] .sheet-search,
+[data-theme="light"] .sheet-count,
+[data-theme="light"] .theme-toggle {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+
+/* Brighter / darker text colors for light theme contrast */
+[data-theme="light"] {
+  --text-dim: #5a6985;  /* much darker than original light grey */
+}
+[data-theme="light"] .name-cell { color: #4a5a78 !important; }
+[data-theme="light"] tbody td { color: #2a3a55 !important; }
+[data-theme="light"] .sym-cell { color: #0066aa !important; text-shadow: none !important; }
+[data-theme="light"] .s-sub { color: #4a5a78 !important; }
+[data-theme="light"] .s-label { color: #0077bb !important; text-shadow: none !important; }
+[data-theme="light"] .tape-sym { color: #0077bb !important; }
+[data-theme="light"] .tape-price { color: #2a3a55 !important; }
+[data-theme="light"] .footer-note { color: #5a6985 !important; }
+[data-theme="light"] .last-upd { color: #0077bb !important; text-shadow: none !important; }
+[data-theme="light"] .tab-btn { color: #6a7a95 !important; }
+[data-theme="light"] .tab-btn.active { color: #0066aa !important; text-shadow: none !important; }
+[data-theme="light"] thead th { color: #4a5a78 !important; }
+[data-theme="light"] .guide-section-title { color: #4a5a78 !important; }
+[data-theme="light"] .g-title { color: #1a2a45 !important; }
+[data-theme="light"] .g-body { color: #2a3a55 !important; opacity: 1 !important; }
+[data-theme="light"] .g-body strong, [data-theme="light"] .g-body b { color: #0066aa !important; }
+[data-theme="light"] .g-tip { color: #4a5a78 !important; background: rgba(0,136,204,0.08) !important; }
+[data-theme="light"] .market-label, [data-theme="light"] #market-label { color: #4a5a78 !important; }
+[data-theme="light"] .logo { color: #0066aa !important; text-shadow: none !important; }
+[data-theme="light"] .logo-text { color: #0066aa !important; text-shadow: none !important; }
+[data-theme="light"] .logo-bracket { color: #d6336c !important; }
+[data-theme="light"] .ticker-tape { background: #f0f4f9 !important; }
+[data-theme="light"] .nav-center { color: #4a5a78 !important; }
+[data-theme="light"] .sheet-table th { color: #1a2a45 !important; }
+[data-theme="light"] .sheet-count { color: #5a6985 !important; }
+[data-theme="light"] .bg-p1 { background: rgba(43,138,62,0.10)!important; }
+[data-theme="light"] .bg-p2 { background: rgba(43,138,62,0.22)!important; }
+[data-theme="light"] .bg-p3 { background: rgba(43,138,62,0.38)!important; color: #fff!important; }
+[data-theme="light"] .bg-p4 { background: rgba(43,138,62,0.60)!important; color: #fff!important; }
+[data-theme="light"] .bg-n1 { background: rgba(201,24,74,0.10)!important; }
+[data-theme="light"] .bg-n2 { background: rgba(201,24,74,0.25)!important; }
+[data-theme="light"] .bg-n3 { background: rgba(201,24,74,0.50)!important; color: #fff!important; }
+[data-theme="light"] .sheet-table th { background: #d6dfeb; color: #5a6a85; }
+[data-theme="light"] .sheet-table th:first-child, [data-theme="light"] .sheet-table th:nth-child(2) { background: #d6dfeb; }
+[data-theme="light"] .sheet-table td:first-child, [data-theme="light"] .sheet-table td:nth-child(2) { background: #ffffff; }
+[data-theme="light"] .sheet-table tbody tr:hover td:first-child, [data-theme="light"] .sheet-table tbody tr:hover td:nth-child(2) { background: #e8eef5!important; }
+
+/* Theme toggle button */
+.theme-toggle {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 7px 12px;
+  margin-right: 10px;
+  transition: all 0.2s;
+}
+.theme-toggle:hover { box-shadow: 0 0 10px var(--cyan-glow); }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Rajdhani',sans-serif;background:var(--black);color:var(--text);min-height:100vh;font-size:12px;overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.15) 2px,rgba(0,0,0,0.15) 4px);pointer-events:none;z-index:9999;}
@@ -305,7 +416,7 @@ footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);displ
   <nav>
     <div class="logo"><span class="logo-bracket">[</span><span class="logo-text" data-text="GURA//MARKET">GURA//MARKET</span><span class="logo-bracket">]</span></div>
     <div class="nav-center"><div class="ticker-item"><div class="dot-live"></div><span id="market-label">LIVE MODE</span></div></div>
-    <div class="nav-right"><button class="cyber-btn" onclick="fetchData()" id="refresh-btn">⟳ SYNC DATA</button></div>
+    <div class="nav-right"><button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">☀ LIGHT</button><button class="cyber-btn" onclick="fetchData()" id="refresh-btn">⟳ SYNC DATA</button></div>
   </nav>
   <div class="ticker-tape"><div class="ticker-track" id="ticker-track"></div></div>
   <div class="summary-strip"><!-- 8個卡片，與原來相同，此處省略內容以節省長度，實際運作會完整顯示 -->
@@ -1086,6 +1197,44 @@ function renderSheet() {
   const cnt = document.getElementById('sheet-count');
   if (cnt) cnt.textContent = `// ${data.length} ROWS`;
 }
+
+/* ── THEME TOGGLE ── */
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme') || 'dark';
+  const next    = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  document.getElementById('theme-btn').textContent = next === 'dark' ? '☀ LIGHT' : '🌙 DARK';
+  localStorage.setItem('theme', next);
+}
+
+// Load saved theme on startup
+(function() {
+  const saved = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', saved);
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('theme-btn');
+    if (btn) btn.textContent = saved === 'dark' ? '☀ LIGHT' : '🌙 DARK';
+  });
+})();
+
+/* ── THEME TOGGLE ── */
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme') || 'dark';
+  const next    = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  document.getElementById('theme-btn').textContent = next === 'dark' ? '☀ LIGHT' : '🌙 DARK';
+  try { localStorage.setItem('theme', next); } catch(e) {}
+}
+
+(function() {
+  let saved = 'dark';
+  try { saved = localStorage.getItem('theme') || 'dark'; } catch(e) {}
+  document.documentElement.setAttribute('data-theme', saved);
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('theme-btn');
+    if (btn) btn.textContent = saved === 'dark' ? '☀ LIGHT' : '🌙 DARK';
+  });
+})();
 
 /* ── TAB SWITCHING ── */
 function switchTab(name, el) {
