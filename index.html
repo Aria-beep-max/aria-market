@@ -101,17 +101,85 @@
 [data-theme="light"] .nav-center { color: #4a5a78 !important; }
 [data-theme="light"] .sheet-table th { color: #1a2a45 !important; }
 [data-theme="light"] .sheet-count { color: #5a6985 !important; }
-[data-theme="light"] .bg-p1 { background: rgba(43,138,62,0.10)!important; }
-[data-theme="light"] .bg-p2 { background: rgba(43,138,62,0.22)!important; }
-[data-theme="light"] .bg-p3 { background: rgba(43,138,62,0.38)!important; color: #fff!important; }
-[data-theme="light"] .bg-p4 { background: rgba(43,138,62,0.60)!important; color: #fff!important; }
-[data-theme="light"] .bg-n1 { background: rgba(201,24,74,0.10)!important; }
-[data-theme="light"] .bg-n2 { background: rgba(201,24,74,0.25)!important; }
-[data-theme="light"] .bg-n3 { background: rgba(201,24,74,0.50)!important; color: #fff!important; }
+/* 條件式格式 - 漲跌色塊 (淺色模式) - 高優先序，覆蓋斑馬紋 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td.bg-p1,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td.bg-p1,
+[data-theme="light"] tbody tr:nth-child(odd) td.bg-p1,
+[data-theme="light"] tbody tr:nth-child(even) td.bg-p1 { background: rgb(217,236,222) !important; color: #2c5e34 !important; }      /* 0~10% 極淺綠 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td.bg-p2,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td.bg-p2,
+[data-theme="light"] tbody tr:nth-child(odd) td.bg-p2,
+[data-theme="light"] tbody tr:nth-child(even) td.bg-p2 { background: rgb(183,219,193) !important; color: #1e4a26 !important; }      /* 10~20% 淺綠 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td.bg-p3,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td.bg-p3,
+[data-theme="light"] tbody tr:nth-child(odd) td.bg-p3,
+[data-theme="light"] tbody tr:nth-child(even) td.bg-p3 { background: rgb(123,194,143) !important; color: #0a3015 !important; }      /* 20~30% 中綠 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td.bg-p4,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td.bg-p4,
+[data-theme="light"] tbody tr:nth-child(odd) td.bg-p4,
+[data-theme="light"] tbody tr:nth-child(even) td.bg-p4 { background: rgb(56,142,80) !important; color: #ffffff !important; font-weight: 700; }   /* >30% 深綠 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td.bg-n1,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td.bg-n1,
+[data-theme="light"] tbody tr:nth-child(odd) td.bg-n1,
+[data-theme="light"] tbody tr:nth-child(even) td.bg-n1 { background: rgb(252,228,236) !important; color: #8b1a3a !important; }      /* 0~-10% 粉色 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td.bg-n2,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td.bg-n2,
+[data-theme="light"] tbody tr:nth-child(odd) td.bg-n2,
+[data-theme="light"] tbody tr:nth-child(even) td.bg-n2 { background: rgb(239,154,154) !important; color: #5d0d1f !important; }      /* -10~-20% 中紅 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td.bg-n3,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td.bg-n3,
+[data-theme="light"] tbody tr:nth-child(odd) td.bg-n3,
+[data-theme="light"] tbody tr:nth-child(even) td.bg-n3 { background: rgb(211,47,47) !important; color: #ffffff !important; font-weight: 700; } /* <-20% 深紅 */
 [data-theme="light"] .sheet-table th { background: #d6dfeb; color: #5a6a85; }
-[data-theme="light"] .sheet-table th:first-child, [data-theme="light"] .sheet-table th:nth-child(2) { background: #d6dfeb; }
-[data-theme="light"] .sheet-table td:first-child, [data-theme="light"] .sheet-table td:nth-child(2) { background: #ffffff; }
-[data-theme="light"] .sheet-table tbody tr:hover td:first-child, [data-theme="light"] .sheet-table tbody tr:hover td:nth-child(2) { background: #e8eef5!important; }
+/* ── Light theme badge overrides ── */
+[data-theme="light"] .badge-watch {
+  background: #ffffff !important;
+  color: #0077bb !important;
+  border: 1.5px solid #0077bb !important;
+  text-shadow: none !important;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(0,119,187,0.3) !important;
+  animation: none !important;
+}
+[data-theme="light"] .badge-trigger {
+  background: #ffffff !important;
+  color: #cc0044 !important;
+  border: 1.5px solid #cc0044 !important;
+  text-shadow: none !important;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(204,0,68,0.3) !important;
+  animation: none !important;
+}
+[data-theme="light"] .badge-obs {
+  background: #f5f8fc !important;
+  color: #7a8aaa !important;
+  border: 1px solid #b0bdd0 !important;
+  clip-path: none !important;
+}
+[data-theme="light"] .badge-alert {
+  background: #fff8e1 !important;
+  color: #c77800 !important;
+  border: 1px solid #ffb300 !important;
+  text-shadow: none !important;
+  clip-path: none !important;
+}
+
+[data-theme="light"] .sheet-table th:first-child, [data-theme="light"] .sheet-table th:nth-child(2) { background: rgb(77,208,225) !important; }
+[data-theme="light"] .sheet-table th { background: rgb(77,208,225) !important; color: #003844 !important; }
+/* zebra: 奇數列白色，偶數列淺青色 */
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td { background: rgb(255,255,255) !important; }
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td { background: rgb(224,247,250) !important; }
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td:first-child,
+[data-theme="light"] .sheet-table tbody tr:nth-child(odd) td:nth-child(2) { background: rgb(255,255,255) !important; }
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td:first-child,
+[data-theme="light"] .sheet-table tbody tr:nth-child(even) td:nth-child(2) { background: rgb(224,247,250) !important; }
+[data-theme="light"] .sheet-table tbody tr:hover td { background: rgb(178,235,242) !important; }
+[data-theme="light"] .sheet-table tbody tr:hover td:first-child,
+[data-theme="light"] .sheet-table tbody tr:hover td:nth-child(2) { background: rgb(178,235,242) !important; }
+
+/* Portfolio table zebra */
+[data-theme="light"] thead th { background: rgb(77,208,225) !important; color: #003844 !important; }
+[data-theme="light"] tbody tr:nth-child(odd) td { background: rgb(255,255,255) !important; }
+[data-theme="light"] tbody tr:nth-child(even) td { background: rgb(224,247,250) !important; }
+[data-theme="light"] tbody tr:hover td { background: rgb(178,235,242) !important; }
 
 /* Theme toggle button */
 .theme-toggle {
@@ -227,7 +295,11 @@ footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);displ
   margin-top: 12px;
   border-top: 1px solid var(--border);
   padding: 16px;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.3); /* 暗色 - 可自行修改 */
+}
+
+[data-theme="light"] .history-section {
+  background: #f0f6fb; /* 亮色 - 可自行修改 */
 }
 .history-title {
   font-family: 'Orbitron', sans-serif;
@@ -246,13 +318,17 @@ footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);displ
   padding-bottom: 6px;
 }
 .three-line-card {
-  background: var(--surface);
+  background: #0c1120; /* 暗色 - 可自行修改 */
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 8px 6px;
   text-align: center;
   font-family: 'Share Tech Mono', monospace;
   font-size: 12px;
+}
+
+[data-theme="light"] .three-line-card {
+  background: #ffffff; /* 亮色 - 可自行修改 */
 }
 .three-line-card .day-label {
   color: var(--cyan);
@@ -284,11 +360,16 @@ footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);displ
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 12px;
   padding: 16px;
-  background: rgba(0,229,255,0.02);
+  background: rgba(0,229,255,0.02); /* 暗色 - 可自行修改 */
   border-top: 1px solid var(--border);
 }
+
+[data-theme="light"] .strategy-grid {
+  background: #e8f4fb; /* 亮色 - 可自行修改 */
+}
+
 .metric-card {
-  background: var(--surface);
+  background: var(--surface); /* 暗色 - 改 var(--surface) 或直接填色碼 */
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 6px 12px;
@@ -296,6 +377,10 @@ footer{margin-top:24px;padding-top:16px;border-top:1px solid var(--border);displ
   justify-content: space-between;
   font-family: 'Share Tech Mono', monospace;
   font-size: 11px;
+}
+
+[data-theme="light"] .metric-card {
+  background: #ffffff; /* 亮色 - 可自行修改 */
 }
 
 /* ── TABS ── */
@@ -1151,13 +1236,13 @@ function renderSheet() {
   const pf = (v) => v == null ? '—' : (v>0?'+':'')+v.toFixed(2)+'%';
   const bg = (v) => {
     if (v == null) return '';
-    if (v > 30)  return 'bg-p4';
-    if (v > 20)  return 'bg-p3';
-    if (v > 10)  return 'bg-p2';
-    if (v > 0)   return 'bg-p1';
-    if (v > -5)  return 'bg-n1';
-    if (v > -10) return 'bg-n2';
-    return 'bg-n3';
+    if (v >= 30)  return 'bg-p4';     // >= 30% 深綠
+    if (v >= 20)  return 'bg-p3';     // 20~30% 中綠
+    if (v >= 10)  return 'bg-p2';     // 10~20% 淺綠
+    if (v > 0)    return 'bg-p1';     // 0~10% 極淺綠
+    if (v >= -10) return 'bg-n1';     // 0 ~ -10% 粉色
+    if (v >= -20) return 'bg-n2';     // -10 ~ -20% 中紅
+    return 'bg-n3';                    // < -20% 深紅
   };
 
   const rows = data.map(d => {
