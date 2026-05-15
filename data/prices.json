@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-15T08:24:43",
+  "updated_at": "2026-05-15T12:25:29",
   "count": 80,
   "stocks": [
     {
@@ -39,7 +39,7 @@
       "day6_change": 6.36,
       "day7_price": 394.41,
       "day7_change": -1.79,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "GOOGL",
@@ -78,7 +78,7 @@
       "day6_change": 2.47,
       "day7_price": 388.43,
       "day7_change": 1.35,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "AAPL",
@@ -117,7 +117,7 @@
       "day6_change": 1.17,
       "day7_price": 283.92,
       "day7_change": 2.65,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "NVDA",
@@ -156,7 +156,7 @@
       "day6_change": 5.77,
       "day7_price": 196.5,
       "day7_change": -1.0,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "TSLA",
@@ -195,7 +195,7 @@
       "day6_change": 2.4,
       "day7_price": 389.37,
       "day7_change": -0.8,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "PLTR",
@@ -234,7 +234,7 @@
       "day6_change": -1.56,
       "day7_price": 135.91,
       "day7_change": -6.93,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "META",
@@ -273,7 +273,7 @@
       "day6_change": 1.31,
       "day7_price": 604.96,
       "day7_change": -0.89,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "MSFT",
@@ -296,7 +296,7 @@
       "vol_ratio": 0.79,
       "w52_high": 539.83,
       "w52_low": 356.77,
-      "pe": 24.16,
+      "pe": 24.39,
       "mkt_cap": "3.04T",
       "day1_price": 405.21,
       "day1_change": -0.63,
@@ -312,7 +312,7 @@
       "day6_change": 0.63,
       "day7_price": 411.38,
       "day7_change": -0.54,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "INTC",
@@ -351,7 +351,7 @@
       "day6_change": 4.49,
       "day7_price": 108.15,
       "day7_change": 12.92,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "MU",
@@ -390,7 +390,7 @@
       "day6_change": 4.12,
       "day7_price": 640.2,
       "day7_change": 11.06,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "ASX",
@@ -429,7 +429,7 @@
       "day6_change": 2.15,
       "day7_price": 33.44,
       "day7_change": 3.59,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "AMZN",
@@ -468,7 +468,7 @@
       "day6_change": 0.53,
       "day7_price": 273.55,
       "day7_change": 0.55,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "LLY",
@@ -507,7 +507,7 @@
       "day6_change": -0.18,
       "day7_price": 988.87,
       "day7_change": 2.16,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "ASML",
@@ -546,7 +546,7 @@
       "day6_change": 7.06,
       "day7_price": 1442.92,
       "day7_change": 4.09,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "LRCX",
@@ -585,7 +585,7 @@
       "day6_change": 7.75,
       "day7_price": 275.8,
       "day7_change": 6.66,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "AVGO",
@@ -624,7 +624,7 @@
       "day6_change": -0.45,
       "day7_price": 427.36,
       "day7_change": 2.61,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "GEV",
@@ -663,7 +663,7 @@
       "day6_change": 2.17,
       "day7_price": 1095.21,
       "day7_change": 1.98,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "ETN",
@@ -702,7 +702,7 @@
       "day6_change": 2.56,
       "day7_price": 409.73,
       "day7_change": -2.74,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "NEE",
@@ -741,7 +741,7 @@
       "day6_change": -0.92,
       "day7_price": 96.28,
       "day7_change": 0.81,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "QQQ",
@@ -780,7 +780,7 @@
       "day6_change": 2.08,
       "day7_price": 681.61,
       "day7_change": 1.3,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "QLD",
@@ -819,7 +819,7 @@
       "day6_change": 4.1,
       "day7_price": 84.39,
       "day7_change": 2.56,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "VOO",
@@ -858,7 +858,7 @@
       "day6_change": 1.41,
       "day7_price": 665.3,
       "day7_change": 0.78,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "SSO",
@@ -897,7 +897,7 @@
       "day6_change": 2.79,
       "day7_price": 63.83,
       "day7_change": 1.54,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "LEU",
@@ -936,7 +936,7 @@
       "day6_change": 12.27,
       "day7_price": 206.04,
       "day7_change": -0.43,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "ORCL",
@@ -975,7 +975,7 @@
       "day6_change": 4.68,
       "day7_price": 185.35,
       "day7_change": 2.81,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "USAR",
@@ -1014,7 +1014,7 @@
       "day6_change": 4.3,
       "day7_price": 27.42,
       "day7_change": 7.19,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "UUUU",
@@ -1053,7 +1053,7 @@
       "day6_change": 11.79,
       "day7_price": 21.04,
       "day7_change": -2.68,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "GLD",
@@ -1092,7 +1092,7 @@
       "day6_change": 3.03,
       "day7_price": 418.27,
       "day7_change": 0.86,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "B",
@@ -1131,7 +1131,7 @@
       "day6_change": 7.39,
       "day7_price": 38.72,
       "day7_change": 0.99,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "AEM",
@@ -1170,7 +1170,7 @@
       "day6_change": 6.55,
       "day7_price": 178.14,
       "day7_change": -0.99,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "COHR",
@@ -1209,7 +1209,7 @@
       "day6_change": 2.66,
       "day7_price": 335.73,
       "day7_change": 1.77,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "LITE",
@@ -1248,7 +1248,7 @@
       "day6_change": -5.06,
       "day7_price": 994.56,
       "day7_change": 1.88,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "APLD",
@@ -1287,7 +1287,7 @@
       "day6_change": 10.93,
       "day7_price": 39.88,
       "day7_change": 11.93,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "CRWD",
@@ -1326,7 +1326,7 @@
       "day6_change": -1.78,
       "day7_price": 476.53,
       "day7_change": 1.55,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "IONQ",
@@ -1365,7 +1365,7 @@
       "day6_change": 9.52,
       "day7_price": 48.0,
       "day7_change": 4.92,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "AMD",
@@ -1404,7 +1404,7 @@
       "day6_change": 18.61,
       "day7_price": 355.26,
       "day7_change": 4.02,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "OKLO",
@@ -1443,7 +1443,7 @@
       "day6_change": 16.44,
       "day7_price": 68.38,
       "day7_change": -0.32,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "SNOW",
@@ -1482,7 +1482,7 @@
       "day6_change": -1.39,
       "day7_price": 141.71,
       "day7_change": -1.73,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "VRT",
@@ -1521,7 +1521,7 @@
       "day6_change": 5.25,
       "day7_price": 341.02,
       "day7_change": 3.04,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "NBIS",
@@ -1560,7 +1560,7 @@
       "day6_change": 10.9,
       "day7_price": 175.92,
       "day7_change": -0.28,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "UNH",
@@ -1599,7 +1599,7 @@
       "day6_change": 0.94,
       "day7_price": 363.87,
       "day7_change": -1.86,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "NFLX",
@@ -1638,7 +1638,7 @@
       "day6_change": 0.43,
       "day7_price": 87.89,
       "day7_change": -3.44,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "CRWV",
@@ -1677,7 +1677,7 @@
       "day6_change": 7.89,
       "day7_price": 127.89,
       "day7_change": 1.96,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "MRVL",
@@ -1716,7 +1716,7 @@
       "day6_change": 2.01,
       "day7_price": 168.75,
       "day7_change": 3.11,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2330.TW",
@@ -1755,7 +1755,7 @@
       "day6_change": 2.67,
       "day7_price": 2250.0,
       "day7_change": 0.0,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "3711.TW",
@@ -1794,7 +1794,7 @@
       "day6_change": 3.05,
       "day7_price": 524.0,
       "day7_change": 0.77,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "6285.TW",
@@ -1833,7 +1833,7 @@
       "day6_change": 9.87,
       "day7_price": 233.0,
       "day7_change": 0.0,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "0050.TW",
@@ -1872,7 +1872,7 @@
       "day6_change": 2.04,
       "day7_price": 95.75,
       "day7_change": 1.22,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "00631L.TW",
@@ -1911,7 +1911,7 @@
       "day6_change": 3.67,
       "day7_price": 31.89,
       "day7_change": 2.61,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "00675L.TW",
@@ -1950,7 +1950,7 @@
       "day6_change": 4.04,
       "day7_price": 276.15,
       "day7_change": 2.28,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "00662.TW",
@@ -1989,7 +1989,7 @@
       "day6_change": 1.01,
       "day7_price": 114.25,
       "day7_change": 1.47,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "00924.TW",
@@ -2028,7 +2028,7 @@
       "day6_change": 1.16,
       "day7_price": 31.08,
       "day7_change": 0.81,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "00935.TW",
@@ -2067,7 +2067,7 @@
       "day6_change": 2.14,
       "day7_price": 53.7,
       "day7_change": 1.23,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2327.TW",
@@ -2106,7 +2106,7 @@
       "day6_change": 9.91,
       "day7_price": 338.0,
       "day7_change": -3.01,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2377.TW",
@@ -2145,7 +2145,7 @@
       "day6_change": 1.0,
       "day7_price": 100.0,
       "day7_change": 4.49,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2308.TW",
@@ -2184,7 +2184,7 @@
       "day6_change": 3.17,
       "day7_price": 2210.0,
       "day7_change": 2.08,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2357.TW",
@@ -2223,7 +2223,7 @@
       "day6_change": 1.59,
       "day7_price": 629.0,
       "day7_change": 6.61,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "3413.TW",
@@ -2262,7 +2262,7 @@
       "day6_change": -2.83,
       "day7_price": 318.0,
       "day7_change": -2.0,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "8996.TW",
@@ -2301,7 +2301,7 @@
       "day6_change": -7.73,
       "day7_price": 1165.0,
       "day7_change": -2.1,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "7769.TW",
@@ -2340,7 +2340,7 @@
       "day6_change": 2.28,
       "day7_price": 5705.0,
       "day7_change": 1.88,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2301.TW",
@@ -2379,7 +2379,7 @@
       "day6_change": 10.0,
       "day7_price": 185.0,
       "day7_change": 8.19,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "4958.TW",
@@ -2418,7 +2418,7 @@
       "day6_change": 3.64,
       "day7_price": 412.0,
       "day7_change": -3.4,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2383.TW",
@@ -2457,7 +2457,7 @@
       "day6_change": 0.2,
       "day7_price": 4950.0,
       "day7_change": 4.65,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2404.TW",
@@ -2496,7 +2496,7 @@
       "day6_change": 1.32,
       "day7_price": 984.0,
       "day7_change": 0.72,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2408.TW",
@@ -2535,7 +2535,7 @@
       "day6_change": 1.77,
       "day7_price": 282.0,
       "day7_change": 9.94,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "3037.TW",
@@ -2574,7 +2574,7 @@
       "day6_change": 4.43,
       "day7_price": 858.0,
       "day7_change": -4.98,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2313.TW",
@@ -2613,7 +2613,7 @@
       "day6_change": -0.2,
       "day7_price": 250.0,
       "day7_change": -8.93,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "2912.TW",
@@ -2652,7 +2652,7 @@
       "day6_change": 0.66,
       "day7_price": 227.0,
       "day7_change": 1.34,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "006208.TW",
@@ -2691,7 +2691,7 @@
       "day6_change": 2.16,
       "day7_price": 222.0,
       "day7_change": 1.09,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "3481.TW",
@@ -2730,7 +2730,7 @@
       "day6_change": 5.87,
       "day7_price": 28.1,
       "day7_change": 3.12,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "3211.TWO",
@@ -2769,7 +2769,7 @@
       "day6_change": 2.54,
       "day7_price": 374.5,
       "day7_change": 3.31,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "8299.TWO",
@@ -2808,7 +2808,7 @@
       "day6_change": 2.8,
       "day7_price": 2325.0,
       "day7_change": 9.93,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "3680.TWO",
@@ -2847,7 +2847,7 @@
       "day6_change": 0.69,
       "day7_price": 581.0,
       "day7_change": -0.17,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "5274.TWO",
@@ -2886,7 +2886,7 @@
       "day6_change": -4.33,
       "day7_price": 18700.0,
       "day7_change": 5.12,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "4979.TWO",
@@ -2925,7 +2925,7 @@
       "day6_change": -0.43,
       "day7_price": 703.0,
       "day7_change": -2.09,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "1785.TWO",
@@ -2964,7 +2964,7 @@
       "day6_change": 9.79,
       "day7_price": 168.5,
       "day7_change": 5.31,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "5347.TWO",
@@ -3003,7 +3003,7 @@
       "day6_change": 9.76,
       "day7_price": 169.0,
       "day7_change": 9.74,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "3293.TWO",
@@ -3042,7 +3042,7 @@
       "day6_change": -1.5,
       "day7_price": 731.0,
       "day7_change": -0.81,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "4541.TWO",
@@ -3081,7 +3081,7 @@
       "day6_change": 3.08,
       "day7_price": 48.7,
       "day7_change": -5.8,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     },
     {
       "symbol": "4931.TWO",
@@ -3120,7 +3120,7 @@
       "day6_change": -1.5,
       "day7_price": 166.5,
       "day7_change": 6.73,
-      "updated_at": "2026-05-15T08:24:43"
+      "updated_at": "2026-05-15T12:25:29"
     }
   ]
 }
