@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T11:46:04",
+  "updated_at": "2026-10-28T00:40:46",
   "count": 80,
   "stocks": [
     {
@@ -18,13 +18,13 @@
       "rsi": 26.3,
       "day_high": 428.85,
       "day_low": 417.72,
-      "vol_today": 9613100,
-      "vol_avg": 10946342,
-      "vol_ratio": 0.88,
+      "vol_today": 8992418,
+      "vol_avg": 10829957,
+      "vol_ratio": 0.83,
       "w52_high": 485.8,
       "w52_low": 272.18,
-      "pe": 27.5,
-      "mkt_cap": "2.20T",
+      "pe": 28.31,
+      "mkt_cap": "2.27T",
       "day1_price": 418.51,
       "day1_change": 1.49,
       "day2_price": 412.35,
@@ -39,7 +39,7 @@
       "day6_change": -2.28,
       "day7_price": 422.25,
       "day7_change": -1.8,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "GOOGL",
@@ -57,13 +57,13 @@
       "rsi": 23.3,
       "day_high": 321.48,
       "day_low": 316.6,
-      "vol_today": 23918300,
-      "vol_avg": 25345562,
-      "vol_ratio": 0.94,
+      "vol_today": 28434977,
+      "vol_avg": 25505353,
+      "vol_ratio": 1.11,
       "w52_high": 402.12,
       "w52_low": 266.78,
-      "pe": 15.9,
-      "mkt_cap": "3.87T",
+      "pe": 16.09,
+      "mkt_cap": "3.92T",
       "day1_price": 320.21,
       "day1_change": -1.24,
       "day2_price": 324.22,
@@ -78,7 +78,7 @@
       "day6_change": -2.47,
       "day7_price": 349.22,
       "day7_change": 0.45,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "AAPL",
@@ -96,13 +96,13 @@
       "rsi": 64.2,
       "day_high": 347.09,
       "day_low": 341.03,
-      "vol_today": 42667300,
-      "vol_avg": 40775014,
-      "vol_ratio": 1.05,
+      "vol_today": 39051747,
+      "vol_avg": 40879327,
+      "vol_ratio": 0.96,
       "w52_high": 348.22,
       "w52_low": 246.03,
-      "pe": 39.44,
-      "mkt_cap": "5.02T",
+      "pe": 39.81,
+      "mkt_cap": "5.07T",
       "day1_price": 347.73,
       "day1_change": -0.14,
       "day2_price": 348.22,
@@ -117,7 +117,7 @@
       "day6_change": 0.43,
       "day7_price": 342.0,
       "day7_change": -0.28,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "NVDA",
@@ -135,13 +135,13 @@
       "rsi": 28.7,
       "day_high": 217.75,
       "day_low": 212.61,
-      "vol_today": 90493500,
-      "vol_avg": 104606388,
-      "vol_ratio": 0.87,
+      "vol_today": 84307573,
+      "vol_avg": 103511467,
+      "vol_ratio": 0.81,
       "w52_high": 239.24,
       "w52_low": 164.79,
-      "pe": 27.31,
-      "mkt_cap": "5.22T",
+      "pe": 27.55,
+      "mkt_cap": "5.26T",
       "day1_price": 210.96,
       "day1_change": -0.59,
       "day2_price": 212.21,
@@ -156,7 +156,7 @@
       "day6_change": -1.43,
       "day7_price": 217.23,
       "day7_change": -1.84,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "TSLA",
@@ -174,13 +174,13 @@
       "rsi": 55.1,
       "day_high": 397.27,
       "day_low": 383.73,
-      "vol_today": 52957700,
-      "vol_avg": 36510974,
-      "vol_ratio": 1.45,
+      "vol_today": 45019044,
+      "vol_avg": 36341624,
+      "vol_ratio": 1.24,
       "w52_high": 489.88,
       "w52_low": 298.32,
-      "pe": 430.35,
-      "mkt_cap": "1.55T",
+      "pe": 447.76,
+      "mkt_cap": "1.61T",
       "day1_price": 372.22,
       "day1_change": -0.63,
       "day2_price": 374.58,
@@ -195,7 +195,7 @@
       "day6_change": -2.13,
       "day7_price": 362.44,
       "day7_change": -1.29,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "PLTR",
@@ -213,13 +213,13 @@
       "rsi": 55.1,
       "day_high": 200.05,
       "day_low": 192.91,
-      "vol_today": 16352300,
-      "vol_avg": 23026028,
-      "vol_ratio": 0.71,
+      "vol_today": 19170693,
+      "vol_avg": 22872214,
+      "vol_ratio": 0.84,
       "w52_high": 209.05,
       "w52_low": 107.27,
-      "pe": 169.95,
-      "mkt_cap": "477.8B",
+      "pe": 169.85,
+      "mkt_cap": "477.6B",
       "day1_price": 196.75,
       "day1_change": 0.29,
       "day2_price": 196.19,
@@ -234,7 +234,7 @@
       "day6_change": -7.22,
       "day7_price": 200.5,
       "day7_change": -0.23,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "META",
@@ -252,13 +252,13 @@
       "rsi": 23.3,
       "day_high": 647.69,
       "day_low": 627.8,
-      "vol_today": 30862600,
-      "vol_avg": 22203474,
-      "vol_ratio": 1.39,
+      "vol_today": 50659475,
+      "vol_avg": 23112067,
+      "vol_ratio": 2.19,
       "w52_high": 777.59,
       "w52_low": 524.82,
-      "pe": 21.51,
-      "mkt_cap": "1.61T",
+      "pe": 21.16,
+      "mkt_cap": "1.59T",
       "day1_price": 642.62,
       "day1_change": -0.96,
       "day2_price": 648.85,
@@ -273,7 +273,7 @@
       "day6_change": -3.72,
       "day7_price": 736.72,
       "day7_change": -0.11,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "MSFT",
@@ -291,12 +291,12 @@
       "rsi": 51.9,
       "day_high": 533.25,
       "day_low": 521.69,
-      "vol_today": 18814100,
-      "vol_avg": 20685148,
-      "vol_ratio": 0.91,
+      "vol_today": 19419705,
+      "vol_avg": 20706414,
+      "vol_ratio": 0.94,
       "w52_high": 543.45,
       "w52_low": 352.17,
-      "pe": 29.67,
+      "pe": 29.6,
       "mkt_cap": "3.95T",
       "day1_price": 524.51,
       "day1_change": 0.66,
@@ -312,7 +312,7 @@
       "day6_change": -1.93,
       "day7_price": 539.44,
       "day7_change": 1.08,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "INTC",
@@ -330,13 +330,13 @@
       "rsi": 24.4,
       "day_high": 92.09,
       "day_low": 86.46,
-      "vol_today": 98324400,
-      "vol_avg": 105976351,
-      "vol_ratio": 0.93,
+      "vol_today": 89550016,
+      "vol_avg": 104539223,
+      "vol_ratio": 0.86,
       "w52_high": 140.94,
       "w52_low": 33.62,
       "pe": null,
-      "mkt_cap": "478.2B",
+      "mkt_cap": "495.5B",
       "day1_price": 86.96,
       "day1_change": 1.72,
       "day2_price": 85.49,
@@ -351,7 +351,7 @@
       "day6_change": -5.79,
       "day7_price": 95.37,
       "day7_change": -2.8,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "MU",
@@ -369,13 +369,13 @@
       "rsi": 34.0,
       "day_high": 915.75,
       "day_low": 882.77,
-      "vol_today": 22705400,
-      "vol_avg": 25907451,
+      "vol_today": 22799290,
+      "vol_avg": 25802819,
       "vol_ratio": 0.88,
       "w52_high": 1213.18,
       "w52_low": 201.14,
-      "pe": 12.16,
-      "mkt_cap": "1.02T",
+      "pe": 12.5,
+      "mkt_cap": "1.05T",
       "day1_price": 877.55,
       "day1_change": 2.46,
       "day2_price": 856.49,
@@ -390,7 +390,7 @@
       "day6_change": -5.63,
       "day7_price": 931.24,
       "day7_change": 1.87,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "ASX",
@@ -408,13 +408,13 @@
       "rsi": 34.2,
       "day_high": 40.25,
       "day_low": 38.59,
-      "vol_today": 6703800,
-      "vol_avg": 7279454,
-      "vol_ratio": 0.92,
+      "vol_today": 9531056,
+      "vol_avg": 7286718,
+      "vol_ratio": 1.31,
       "w52_high": 47.6,
-      "w52_low": 13.1,
-      "pe": 53.21,
-      "mkt_cap": "87.8B",
+      "w52_low": 13.23,
+      "pe": 56.08,
+      "mkt_cap": "92.5B",
       "day1_price": 38.69,
       "day1_change": 2.52,
       "day2_price": 37.74,
@@ -429,7 +429,7 @@
       "day6_change": -5.63,
       "day7_price": 41.89,
       "day7_change": -5.5,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "AMZN",
@@ -447,13 +447,13 @@
       "rsi": 44.0,
       "day_high": 250.79,
       "day_low": 247.23,
-      "vol_today": 32613300,
-      "vol_avg": 35626931,
-      "vol_ratio": 0.92,
+      "vol_today": 33975762,
+      "vol_avg": 35760098,
+      "vol_ratio": 0.95,
       "w52_high": 284.02,
       "w52_low": 198.79,
-      "pe": 20.04,
-      "mkt_cap": "2.69T",
+      "pe": 20.36,
+      "mkt_cap": "2.73T",
       "day1_price": 248.0,
       "day1_change": -0.95,
       "day2_price": 250.38,
@@ -468,7 +468,7 @@
       "day6_change": -1.87,
       "day7_price": 254.76,
       "day7_change": 0.27,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "LLY",
@@ -486,12 +486,12 @@
       "rsi": 69.1,
       "day_high": 1296.9,
       "day_low": 1273.73,
-      "vol_today": 2105600,
-      "vol_avg": 2287085,
-      "vol_ratio": 0.92,
+      "vol_today": 1846530,
+      "vol_avg": 2271258,
+      "vol_ratio": 0.81,
       "w52_high": 1306.69,
       "w52_low": 808.43,
-      "pe": 42.94,
+      "pe": 43.03,
       "mkt_cap": "1.14T",
       "day1_price": 1273.46,
       "day1_change": -2.54,
@@ -507,7 +507,7 @@
       "day6_change": 0.43,
       "day7_price": 1251.61,
       "day7_change": 3.55,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "ASML",
@@ -525,13 +525,13 @@
       "rsi": 22.5,
       "day_high": 1612.0,
       "day_low": 1582.88,
-      "vol_today": 1944800,
-      "vol_avg": 1465125,
-      "vol_ratio": 1.33,
+      "vol_today": 1328652,
+      "vol_avg": 1464435,
+      "vol_ratio": 0.91,
       "w52_high": 1986.87,
       "w52_low": 961.95,
-      "pe": 39.15,
-      "mkt_cap": "613.2B",
+      "pe": 40.25,
+      "mkt_cap": "630.4B",
       "day1_price": 1571.8,
       "day1_change": 0.72,
       "day2_price": 1560.54,
@@ -546,7 +546,7 @@
       "day6_change": -0.96,
       "day7_price": 1657.44,
       "day7_change": 0.45,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "LRCX",
@@ -564,13 +564,13 @@
       "rsi": 12.3,
       "day_high": 241.25,
       "day_low": 230.51,
-      "vol_today": 11638300,
-      "vol_avg": 9941845,
-      "vol_ratio": 1.17,
+      "vol_today": 9843496,
+      "vol_avg": 9968765,
+      "vol_ratio": 0.99,
       "w52_high": 432.87,
       "w52_low": 138.95,
-      "pe": 34.27,
-      "mkt_cap": "297.2B",
+      "pe": 34.75,
+      "mkt_cap": "301.4B",
       "day1_price": 230.1,
       "day1_change": -0.02,
       "day2_price": 230.15,
@@ -585,7 +585,7 @@
       "day6_change": -4.87,
       "day7_price": 277.46,
       "day7_change": -3.3,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "AVGO",
@@ -603,13 +603,13 @@
       "rsi": 23.9,
       "day_high": 332.12,
       "day_low": 323.25,
-      "vol_today": 18558000,
-      "vol_avg": 23154942,
-      "vol_ratio": 0.8,
+      "vol_today": 25480570,
+      "vol_avg": 23015067,
+      "vol_ratio": 1.11,
       "w52_high": 479.94,
       "w52_low": 292.41,
-      "pe": 42.04,
-      "mkt_cap": "1.57T",
+      "pe": 43.72,
+      "mkt_cap": "1.63T",
       "day1_price": 321.68,
       "day1_change": -0.48,
       "day2_price": 323.24,
@@ -624,7 +624,7 @@
       "day6_change": -4.52,
       "day7_price": 344.33,
       "day7_change": -0.55,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "GEV",
@@ -642,13 +642,13 @@
       "rsi": 25.5,
       "day_high": 861.98,
       "day_low": 819.85,
-      "vol_today": 2722000,
-      "vol_avg": 2412031,
-      "vol_ratio": 1.13,
+      "vol_today": 3379719,
+      "vol_avg": 2460049,
+      "vol_ratio": 1.37,
       "w52_high": 1174.86,
       "w52_low": 546.95,
-      "pe": 24.52,
-      "mkt_cap": "227.7B",
+      "pe": 25.66,
+      "mkt_cap": "238.4B",
       "day1_price": 815.0,
       "day1_change": -1.5,
       "day2_price": 827.42,
@@ -663,7 +663,7 @@
       "day6_change": -0.57,
       "day7_price": 926.44,
       "day7_change": -1.63,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "ETN",
@@ -681,13 +681,13 @@
       "rsi": 20.2,
       "day_high": 375.67,
       "day_low": 365.0,
-      "vol_today": 1997700,
-      "vol_avg": 2279814,
-      "vol_ratio": 0.88,
+      "vol_today": 2703490,
+      "vol_avg": 2298908,
+      "vol_ratio": 1.18,
       "w52_high": 459.96,
       "w52_low": 313.2,
-      "pe": 37.84,
-      "mkt_cap": "144.5B",
+      "pe": 39.08,
+      "mkt_cap": "149.2B",
       "day1_price": 366.11,
       "day1_change": -0.78,
       "day2_price": 368.99,
@@ -702,7 +702,7 @@
       "day6_change": -2.79,
       "day7_price": 402.48,
       "day7_change": -1.56,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "NEE",
@@ -720,13 +720,13 @@
       "rsi": 69.0,
       "day_high": 82.81,
       "day_low": 81.91,
-      "vol_today": 8947700,
-      "vol_avg": 12256645,
-      "vol_ratio": 0.73,
+      "vol_today": 6843316,
+      "vol_avg": 12234229,
+      "vol_ratio": 0.56,
       "w52_high": 96.44,
       "w52_low": 75.49,
-      "pe": 14.78,
-      "mkt_cap": "172.1B",
+      "pe": 14.85,
+      "mkt_cap": "172.9B",
       "day1_price": 82.1,
       "day1_change": 0.24,
       "day2_price": 81.9,
@@ -741,7 +741,7 @@
       "day6_change": 1.06,
       "day7_price": 78.96,
       "day7_change": 0.75,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "QQQ",
@@ -759,12 +759,12 @@
       "rsi": 26.9,
       "day_high": 715.25,
       "day_low": 705.58,
-      "vol_today": 32925600,
-      "vol_avg": 35543694,
-      "vol_ratio": 0.93,
+      "vol_today": 30099074,
+      "vol_avg": 35599204,
+      "vol_ratio": 0.85,
       "w52_high": 759.66,
       "w52_low": 557.09,
-      "pe": 27.27,
+      "pe": 27.62,
       "mkt_cap": null,
       "day1_price": 704.4,
       "day1_change": -0.01,
@@ -780,7 +780,7 @@
       "day6_change": -2.5,
       "day7_price": 728.0,
       "day7_change": -0.13,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "QLD",
@@ -798,12 +798,12 @@
       "rsi": 25.7,
       "day_high": 88.8,
       "day_low": 86.46,
-      "vol_today": 4603800,
-      "vol_avg": 4043280,
-      "vol_ratio": 1.14,
+      "vol_today": 2938998,
+      "vol_avg": 4014231,
+      "vol_ratio": 0.73,
       "w52_high": 100.77,
       "w52_low": 57.11,
-      "pe": 26.06,
+      "pe": 26.73,
       "mkt_cap": null,
       "day1_price": 86.15,
       "day1_change": -0.13,
@@ -819,7 +819,7 @@
       "day6_change": -5.02,
       "day7_price": 92.36,
       "day7_change": -0.21,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "VOO",
@@ -837,12 +837,12 @@
       "rsi": 38.0,
       "day_high": 705.68,
       "day_low": 700.1,
-      "vol_today": 4912800,
-      "vol_avg": 7724940,
-      "vol_ratio": 0.64,
+      "vol_today": 5355210,
+      "vol_avg": 7654634,
+      "vol_ratio": 0.7,
       "w52_high": 716.2,
       "w52_low": 577.76,
-      "pe": 24.3,
+      "pe": 24.44,
       "mkt_cap": null,
       "day1_price": 698.58,
       "day1_change": -0.53,
@@ -858,7 +858,7 @@
       "day6_change": -1.1,
       "day7_price": 709.43,
       "day7_change": 0.28,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "SSO",
@@ -876,12 +876,12 @@
       "rsi": 36.7,
       "day_high": 69.94,
       "day_low": 68.83,
-      "vol_today": 3805300,
-      "vol_avg": 3526560,
-      "vol_ratio": 1.08,
+      "vol_today": 2018528,
+      "vol_avg": 3503420,
+      "vol_ratio": 0.58,
       "w52_high": 72.4,
       "w52_low": 48.88,
-      "pe": 24.25,
+      "pe": 24.53,
       "mkt_cap": null,
       "day1_price": 68.52,
       "day1_change": -1.15,
@@ -897,7 +897,7 @@
       "day6_change": -2.22,
       "day7_price": 70.82,
       "day7_change": 0.51,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "LEU",
@@ -915,13 +915,13 @@
       "rsi": 10.5,
       "day_high": 102.4,
       "day_low": 96.8,
-      "vol_today": 826400,
-      "vol_avg": 849571,
-      "vol_ratio": 0.97,
+      "vol_today": 1042978,
+      "vol_avg": 858396,
+      "vol_ratio": 1.22,
       "w52_high": 390.82,
       "w52_low": 98.44,
-      "pe": 46.0,
-      "mkt_cap": "2.0B",
+      "pe": 51.13,
+      "mkt_cap": "2.2B",
       "day1_price": 102.45,
       "day1_change": -1.63,
       "day2_price": 104.15,
@@ -936,7 +936,7 @@
       "day6_change": -9.5,
       "day7_price": 127.01,
       "day7_change": 5.89,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "ORCL",
@@ -954,13 +954,13 @@
       "rsi": 34.1,
       "day_high": 127.99,
       "day_low": 123.75,
-      "vol_today": 22937700,
-      "vol_avg": 32697877,
-      "vol_ratio": 0.7,
-      "w52_high": 277.68,
+      "vol_today": 25904273,
+      "vol_avg": 32363942,
+      "vol_ratio": 0.8,
+      "w52_high": 277.12,
       "w52_low": 114.57,
-      "pe": 19.76,
-      "mkt_cap": "382.2B",
+      "pe": 20.46,
+      "mkt_cap": "395.7B",
       "day1_price": 126.16,
       "day1_change": 0.49,
       "day2_price": 125.54,
@@ -975,7 +975,7 @@
       "day6_change": -4.64,
       "day7_price": 134.47,
       "day7_change": 3.0,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "USAR",
@@ -993,13 +993,13 @@
       "rsi": 14.0,
       "day_high": 9.32,
       "day_low": 8.89,
-      "vol_today": 14191900,
-      "vol_avg": 13346568,
-      "vol_ratio": 1.06,
+      "vol_today": 21149079,
+      "vol_avg": 13467482,
+      "vol_ratio": 1.57,
       "w52_high": 30.7,
       "w52_low": 8.91,
       "pe": null,
-      "mkt_cap": "3.3B",
+      "mkt_cap": "3.9B",
       "day1_price": 9.33,
       "day1_change": -3.12,
       "day2_price": 9.63,
@@ -1014,7 +1014,7 @@
       "day6_change": -4.96,
       "day7_price": 11.09,
       "day7_change": 7.46,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "UUUU",
@@ -1032,13 +1032,13 @@
       "rsi": 7.8,
       "day_high": 7.69,
       "day_low": 7.31,
-      "vol_today": 6304100,
-      "vol_avg": 8383902,
-      "vol_ratio": 0.75,
+      "vol_today": 12138164,
+      "vol_avg": 8546704,
+      "vol_ratio": 1.42,
       "w52_high": 27.72,
       "w52_low": 7.52,
       "pe": null,
-      "mkt_cap": "2.0B",
+      "mkt_cap": "2.2B",
       "day1_price": 7.52,
       "day1_change": -2.21,
       "day2_price": 7.69,
@@ -1053,7 +1053,7 @@
       "day6_change": -1.17,
       "day7_price": 8.57,
       "day7_change": 2.76,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "GLD",
@@ -1071,9 +1071,9 @@
       "rsi": 35.6,
       "day_high": 369.31,
       "day_low": 365.54,
-      "vol_today": 6429100,
-      "vol_avg": 8368800,
-      "vol_ratio": 0.77,
+      "vol_today": 5151791,
+      "vol_avg": 8262474,
+      "vol_ratio": 0.62,
       "w52_high": 495.9,
       "w52_low": 362.32,
       "pe": null,
@@ -1092,7 +1092,7 @@
       "day6_change": -0.18,
       "day7_price": 382.71,
       "day7_change": 1.79,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "B",
@@ -1110,13 +1110,13 @@
       "rsi": 38.7,
       "day_high": 38.44,
       "day_low": 37.44,
-      "vol_today": 5852800,
-      "vol_avg": 7449988,
-      "vol_ratio": 0.79,
+      "vol_today": 5775568,
+      "vol_avg": 7463261,
+      "vol_ratio": 0.77,
       "w52_high": 52.12,
       "w52_low": 31.02,
-      "pe": 9.88,
-      "mkt_cap": "62.9B",
+      "pe": 10.14,
+      "mkt_cap": "64.6B",
       "day1_price": 38.14,
       "day1_change": -1.32,
       "day2_price": 38.65,
@@ -1131,7 +1131,7 @@
       "day6_change": 0.67,
       "day7_price": 40.55,
       "day7_change": 4.27,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "AEM",
@@ -1149,13 +1149,13 @@
       "rsi": 41.1,
       "day_high": 176.79,
       "day_low": 170.71,
-      "vol_today": 1484400,
-      "vol_avg": 1702491,
-      "vol_ratio": 0.87,
+      "vol_today": 1393253,
+      "vol_avg": 1706595,
+      "vol_ratio": 0.82,
       "w52_high": 251.01,
       "w52_low": 136.04,
-      "pe": 15.03,
-      "mkt_cap": "89.0B",
+      "pe": 15.46,
+      "mkt_cap": "91.5B",
       "day1_price": 173.94,
       "day1_change": -1.25,
       "day2_price": 176.15,
@@ -1170,7 +1170,7 @@
       "day6_change": 1.05,
       "day7_price": 187.56,
       "day7_change": 5.96,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "COHR",
@@ -1188,13 +1188,13 @@
       "rsi": 17.6,
       "day_high": 225.66,
       "day_low": 208.86,
-      "vol_today": 7671000,
-      "vol_avg": 7167711,
-      "vol_ratio": 1.07,
+      "vol_today": 6260707,
+      "vol_avg": 7098405,
+      "vol_ratio": 0.88,
       "w52_high": 426.89,
       "w52_low": 128.7,
-      "pe": 53.76,
-      "mkt_cap": "43.6B",
+      "pe": 57.23,
+      "mkt_cap": "46.4B",
       "day1_price": 209.29,
       "day1_change": 0.71,
       "day2_price": 207.82,
@@ -1209,7 +1209,7 @@
       "day6_change": -7.06,
       "day7_price": 250.6,
       "day7_change": -4.83,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "LITE",
@@ -1227,13 +1227,13 @@
       "rsi": 25.1,
       "day_high": 840.47,
       "day_low": 756.0,
-      "vol_today": 6013100,
-      "vol_avg": 4905360,
-      "vol_ratio": 1.23,
+      "vol_today": 5555175,
+      "vol_avg": 4854110,
+      "vol_ratio": 1.14,
       "w52_high": 1133.4,
       "w52_low": 188.36,
       "pe": null,
-      "mkt_cap": "74.1B",
+      "mkt_cap": "78.5B",
       "day1_price": 756.17,
       "day1_change": 0.48,
       "day2_price": 752.54,
@@ -1248,7 +1248,7 @@
       "day6_change": -5.22,
       "day7_price": 869.54,
       "day7_change": -2.99,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "APLD",
@@ -1266,13 +1266,13 @@
       "rsi": 22.3,
       "day_high": 18.67,
       "day_low": 17.5,
-      "vol_today": 27011400,
-      "vol_avg": 22531631,
-      "vol_ratio": 1.2,
+      "vol_today": 20393021,
+      "vol_avg": 22546792,
+      "vol_ratio": 0.9,
       "w52_high": 49.65,
       "w52_low": 17.83,
       "pe": null,
-      "mkt_cap": "5.4B",
+      "mkt_cap": "5.9B",
       "day1_price": 18.25,
       "day1_change": -4.4,
       "day2_price": 19.09,
@@ -1287,7 +1287,7 @@
       "day6_change": -11.48,
       "day7_price": 20.39,
       "day7_change": 0.3,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "CRWD",
@@ -1305,13 +1305,13 @@
       "rsi": 42.5,
       "day_high": 264.39,
       "day_low": 254.06,
-      "vol_today": 8451500,
-      "vol_avg": 9898954,
-      "vol_ratio": 0.85,
+      "vol_today": 7289308,
+      "vol_avg": 9878288,
+      "vol_ratio": 0.74,
       "w52_high": 278.86,
       "w52_low": 87.56,
-      "pe": 5236.6,
-      "mkt_cap": "268.1B",
+      "pe": 5360.4,
+      "mkt_cap": "274.4B",
       "day1_price": 257.57,
       "day1_change": 8.25,
       "day2_price": 237.94,
@@ -1326,7 +1326,7 @@
       "day6_change": -7.02,
       "day7_price": 244.57,
       "day7_change": -1.89,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "IONQ",
@@ -1344,13 +1344,13 @@
       "rsi": 22.1,
       "day_high": 31.52,
       "day_low": 29.94,
-      "vol_today": 17051100,
-      "vol_avg": 24483828,
-      "vol_ratio": 0.7,
+      "vol_today": 21943263,
+      "vol_avg": 23963341,
+      "vol_ratio": 0.92,
       "w52_high": 72.07,
       "w52_low": 26.59,
       "pe": null,
-      "mkt_cap": "13.2B",
+      "mkt_cap": "14.1B",
       "day1_price": 31.27,
       "day1_change": 0.35,
       "day2_price": 31.16,
@@ -1365,7 +1365,7 @@
       "day6_change": -8.94,
       "day7_price": 34.35,
       "day7_change": 9.33,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "AMD",
@@ -1383,13 +1383,13 @@
       "rsi": 25.6,
       "day_high": 533.5,
       "day_low": 514.01,
-      "vol_today": 16718300,
-      "vol_avg": 21384991,
-      "vol_ratio": 0.78,
+      "vol_today": 20488014,
+      "vol_avg": 21167848,
+      "vol_ratio": 0.97,
       "w52_high": 649.42,
       "w52_low": 190.95,
-      "pe": 135.53,
-      "mkt_cap": "867.3B",
+      "pe": 142.92,
+      "mkt_cap": "914.6B",
       "day1_price": 516.79,
       "day1_change": 1.74,
       "day2_price": 507.93,
@@ -1404,7 +1404,7 @@
       "day6_change": -5.95,
       "day7_price": 562.23,
       "day7_change": -1.5,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "OKLO",
@@ -1422,13 +1422,13 @@
       "rsi": 10.1,
       "day_high": 26.96,
       "day_low": 25.39,
-      "vol_today": 6991900,
-      "vol_avg": 10022745,
-      "vol_ratio": 0.7,
+      "vol_today": 8070746,
+      "vol_avg": 9851635,
+      "vol_ratio": 0.82,
       "w52_high": 143.42,
       "w52_low": 25.94,
       "pe": null,
-      "mkt_cap": "4.8B",
+      "mkt_cap": "5.1B",
       "day1_price": 26.35,
       "day1_change": -2.44,
       "day2_price": 27.01,
@@ -1443,7 +1443,7 @@
       "day6_change": -6.8,
       "day7_price": 30.01,
       "day7_change": 3.34,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "SNOW",
@@ -1461,13 +1461,13 @@
       "rsi": 49.7,
       "day_high": 337.99,
       "day_low": 322.74,
-      "vol_today": 2626400,
-      "vol_avg": 4291382,
-      "vol_ratio": 0.61,
+      "vol_today": 2310418,
+      "vol_avg": 4206451,
+      "vol_ratio": 0.55,
       "w52_high": 368.89,
       "w52_low": 121.11,
       "pe": null,
-      "mkt_cap": "118.2B",
+      "mkt_cap": "119.0B",
       "day1_price": 325.43,
       "day1_change": 3.65,
       "day2_price": 313.96,
@@ -1482,7 +1482,7 @@
       "day6_change": -8.43,
       "day7_price": 335.07,
       "day7_change": -0.0,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "VRT",
@@ -1500,13 +1500,13 @@
       "rsi": 17.2,
       "day_high": 201.68,
       "day_low": 194.55,
-      "vol_today": 5515000,
-      "vol_avg": 5741822,
-      "vol_ratio": 0.96,
+      "vol_today": 8393728,
+      "vol_avg": 5846343,
+      "vol_ratio": 1.44,
       "w52_high": 376.06,
       "w52_low": 149.73,
-      "pe": 44.0,
-      "mkt_cap": "76.9B",
+      "pe": 45.94,
+      "mkt_cap": "80.3B",
       "day1_price": 194.32,
       "day1_change": -0.65,
       "day2_price": 195.59,
@@ -1521,7 +1521,7 @@
       "day6_change": -3.88,
       "day7_price": 214.75,
       "day7_change": -3.63,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "NBIS",
@@ -1539,13 +1539,13 @@
       "rsi": 8.5,
       "day_high": 165.86,
       "day_low": 149.48,
-      "vol_today": 30550100,
-      "vol_avg": 19182114,
-      "vol_ratio": 1.59,
+      "vol_today": 20404486,
+      "vol_avg": 19006559,
+      "vol_ratio": 1.07,
       "w52_high": 286.69,
       "w52_low": 73.87,
-      "pe": 119.74,
-      "mkt_cap": "41.7B",
+      "pe": 133.18,
+      "mkt_cap": "46.3B",
       "day1_price": 158.74,
       "day1_change": -0.27,
       "day2_price": 159.17,
@@ -1560,7 +1560,7 @@
       "day6_change": -12.18,
       "day7_price": 188.41,
       "day7_change": 1.29,
-      "updated_at": "2026-10-27T11:46:03"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "UNH",
@@ -1578,13 +1578,13 @@
       "rsi": 68.7,
       "day_high": 420.86,
       "day_low": 408.35,
-      "vol_today": 4583600,
-      "vol_avg": 5761371,
-      "vol_ratio": 0.8,
+      "vol_today": 3743538,
+      "vol_avg": 5666918,
+      "vol_ratio": 0.66,
       "w52_high": 433.68,
       "w52_low": 255.97,
-      "pe": 26.41,
-      "mkt_cap": "368.6B",
+      "pe": 26.39,
+      "mkt_cap": "368.4B",
       "day1_price": 418.09,
       "day1_change": -1.62,
       "day2_price": 424.98,
@@ -1599,7 +1599,7 @@
       "day6_change": -1.29,
       "day7_price": 406.67,
       "day7_change": 2.79,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "NFLX",
@@ -1617,13 +1617,13 @@
       "rsi": 37.7,
       "day_high": 65.5,
       "day_low": 62.86,
-      "vol_today": 54303200,
-      "vol_avg": 39525871,
-      "vol_ratio": 1.37,
+      "vol_today": 48552166,
+      "vol_avg": 39948896,
+      "vol_ratio": 1.22,
       "w52_high": 115.75,
       "w52_low": 63.9,
-      "pe": 18.47,
-      "mkt_cap": "266.1B",
+      "pe": 18.07,
+      "mkt_cap": "260.3B",
       "day1_price": 65.85,
       "day1_change": -1.79,
       "day2_price": 67.05,
@@ -1638,7 +1638,7 @@
       "day6_change": -2.86,
       "day7_price": 72.61,
       "day7_change": 2.89,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "CRWV",
@@ -1656,13 +1656,13 @@
       "rsi": 12.9,
       "day_high": 57.8,
       "day_low": 51.24,
-      "vol_today": 68580500,
-      "vol_avg": 45313900,
-      "vol_ratio": 1.51,
+      "vol_today": 53151279,
+      "vol_avg": 45380070,
+      "vol_ratio": 1.17,
       "w52_high": 139.93,
       "w52_low": 54.24,
       "pe": null,
-      "mkt_cap": "30.4B",
+      "mkt_cap": "32.9B",
       "day1_price": 54.24,
       "day1_change": -2.45,
       "day2_price": 55.6,
@@ -1677,7 +1677,7 @@
       "day6_change": -11.91,
       "day7_price": 69.69,
       "day7_change": 5.94,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "MRVL",
@@ -1695,13 +1695,13 @@
       "rsi": 26.8,
       "day_high": 238.58,
       "day_low": 223.69,
-      "vol_today": 14424200,
-      "vol_avg": 19301460,
-      "vol_ratio": 0.75,
+      "vol_today": 15362331,
+      "vol_avg": 19154703,
+      "vol_ratio": 0.8,
       "w52_high": 316.28,
       "w52_low": 73.66,
-      "pe": 76.9,
-      "mkt_cap": "210.1B",
+      "pe": 80.12,
+      "mkt_cap": "218.9B",
       "day1_price": 228.51,
       "day1_change": 2.26,
       "day2_price": 223.47,
@@ -1716,7 +1716,7 @@
       "day6_change": -5.56,
       "day7_price": 241.24,
       "day7_change": -1.65,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2330.TW",
@@ -1734,12 +1734,12 @@
       "rsi": 15.7,
       "day_high": 2405.0,
       "day_low": 2380.0,
-      "vol_today": 35766965,
-      "vol_avg": 21153748,
-      "vol_ratio": 1.69,
+      "vol_today": 33964182,
+      "vol_avg": 21102239,
+      "vol_ratio": 1.61,
       "w52_high": 2585.0,
       "w52_low": 1358.34,
-      "pe": 24.62,
+      "pe": 24.47,
       "mkt_cap": "62.24T",
       "day1_price": 2385.0,
       "day1_change": 0.0,
@@ -1755,7 +1755,7 @@
       "day6_change": -0.82,
       "day7_price": 2440.0,
       "day7_change": -2.01,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "3711.TW",
@@ -1773,9 +1773,9 @@
       "rsi": 29.0,
       "day_high": 668.0,
       "day_low": 642.0,
-      "vol_today": 25585620,
-      "vol_avg": 14992854,
-      "vol_ratio": 1.71,
+      "vol_today": 25176454,
+      "vol_avg": 14981164,
+      "vol_ratio": 1.68,
       "w52_high": 762.0,
       "w52_low": 200.67,
       "pe": 49.81,
@@ -1794,7 +1794,7 @@
       "day6_change": -0.3,
       "day7_price": 673.0,
       "day7_change": -9.91,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "6285.TW",
@@ -1812,12 +1812,12 @@
       "rsi": 38.6,
       "day_high": 234.0,
       "day_low": 223.5,
-      "vol_today": 6974491,
-      "vol_avg": 5638288,
-      "vol_ratio": 1.24,
+      "vol_today": 6860762,
+      "vol_avg": 5635039,
+      "vol_ratio": 1.22,
       "w52_high": 313.71,
       "w52_low": 94.41,
-      "pe": 25.19,
+      "pe": 25.42,
       "mkt_cap": "110.2B",
       "day1_price": 230.0,
       "day1_change": 0.0,
@@ -1833,7 +1833,7 @@
       "day6_change": 5.81,
       "day7_price": 241.0,
       "day7_change": -4.74,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "0050.TW",
@@ -1872,7 +1872,7 @@
       "day6_change": 0.09,
       "day7_price": 108.9,
       "day7_change": -3.63,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "00631L.TW",
@@ -1911,7 +1911,7 @@
       "day6_change": 0.03,
       "day7_price": 37.14,
       "day7_change": -6.64,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "00675L.TW",
@@ -1950,7 +1950,7 @@
       "day6_change": 0.59,
       "day7_price": 323.9,
       "day7_change": -7.27,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "00662.TW",
@@ -1989,7 +1989,7 @@
       "day6_change": 1.38,
       "day7_price": 123.25,
       "day7_change": -2.61,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "00924.TW",
@@ -2028,7 +2028,7 @@
       "day6_change": 0.97,
       "day7_price": 33.93,
       "day7_change": -1.99,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "00935.TW",
@@ -2067,7 +2067,7 @@
       "day6_change": 0.26,
       "day7_price": 56.85,
       "day7_change": -6.03,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2327.TW",
@@ -2085,12 +2085,12 @@
       "rsi": 30.8,
       "day_high": 530.0,
       "day_low": 507.0,
-      "vol_today": 31814660,
-      "vol_avg": 40476234,
-      "vol_ratio": 0.79,
+      "vol_today": 31214647,
+      "vol_avg": 40459091,
+      "vol_ratio": 0.77,
       "w52_high": 1140.0,
       "w52_low": 216.45,
-      "pe": 35.08,
+      "pe": 34.14,
       "mkt_cap": "1.07T",
       "day1_price": 507.0,
       "day1_change": 0.0,
@@ -2106,7 +2106,7 @@
       "day6_change": -1.05,
       "day7_price": 573.0,
       "day7_change": -8.61,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2377.TW",
@@ -2124,12 +2124,12 @@
       "rsi": 72.9,
       "day_high": 168.0,
       "day_low": 162.0,
-      "vol_today": 8058813,
-      "vol_avg": 7228245,
-      "vol_ratio": 1.11,
+      "vol_today": 7923637,
+      "vol_avg": 7224383,
+      "vol_ratio": 1.1,
       "w52_high": 166.0,
       "w52_low": 82.56,
-      "pe": 14.51,
+      "pe": 14.25,
       "mkt_cap": "140.2B",
       "day1_price": 163.0,
       "day1_change": 0.0,
@@ -2145,7 +2145,7 @@
       "day6_change": 2.22,
       "day7_price": 158.0,
       "day7_change": -0.63,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2308.TW",
@@ -2163,9 +2163,9 @@
       "rsi": 12.8,
       "day_high": 1570.0,
       "day_low": 1490.0,
-      "vol_today": 18473608,
-      "vol_avg": 10330477,
-      "vol_ratio": 1.79,
+      "vol_today": 16664194,
+      "vol_avg": 10278779,
+      "vol_ratio": 1.62,
       "w52_high": 2506.89,
       "w52_low": 885.37,
       "pe": 48.14,
@@ -2184,7 +2184,7 @@
       "day6_change": 0.31,
       "day7_price": 1630.0,
       "day7_change": -8.68,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2357.TW",
@@ -2202,9 +2202,9 @@
       "rsi": 43.1,
       "day_high": 972.0,
       "day_low": 948.0,
-      "vol_today": 3978276,
-      "vol_avg": 2552946,
-      "vol_ratio": 1.56,
+      "vol_today": 3938434,
+      "vol_avg": 2551808,
+      "vol_ratio": 1.54,
       "w52_high": 1025.0,
       "w52_low": 466.24,
       "pe": 14.25,
@@ -2223,7 +2223,7 @@
       "day6_change": 1.95,
       "day7_price": 975.0,
       "day7_change": -1.52,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "3413.TW",
@@ -2241,9 +2241,9 @@
       "rsi": 32.6,
       "day_high": 279.0,
       "day_low": 273.5,
-      "vol_today": 854063,
-      "vol_avg": 572424,
-      "vol_ratio": 1.49,
+      "vol_today": 843317,
+      "vol_avg": 572117,
+      "vol_ratio": 1.47,
       "w52_high": 382.0,
       "w52_low": 267.24,
       "pe": 13.81,
@@ -2262,7 +2262,7 @@
       "day6_change": 1.08,
       "day7_price": 278.0,
       "day7_change": -2.8,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "8996.TW",
@@ -2280,12 +2280,12 @@
       "rsi": 41.3,
       "day_high": 1620.0,
       "day_low": 1405.0,
-      "vol_today": 5098695,
-      "vol_avg": 3902885,
-      "vol_ratio": 1.31,
+      "vol_today": 4969284,
+      "vol_avg": 3899187,
+      "vol_ratio": 1.27,
       "w52_high": 1720.0,
       "w52_low": 459.51,
-      "pe": 98.79,
+      "pe": 105.17,
       "mkt_cap": "136.2B",
       "day1_price": 1560.0,
       "day1_change": 0.0,
@@ -2301,7 +2301,7 @@
       "day6_change": 3.29,
       "day7_price": 1520.0,
       "day7_change": -9.79,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "7769.TW",
@@ -2319,12 +2319,12 @@
       "rsi": 38.5,
       "day_high": 5395.0,
       "day_low": 5070.0,
-      "vol_today": 916532,
-      "vol_avg": 813294,
-      "vol_ratio": 1.13,
+      "vol_today": 874538,
+      "vol_avg": 812095,
+      "vol_ratio": 1.08,
       "w52_high": 8156.27,
       "w52_low": 2182.25,
-      "pe": 51.8,
+      "pe": 52.45,
       "mkt_cap": "937.4B",
       "day1_price": 5275.0,
       "day1_change": 0.0,
@@ -2340,7 +2340,7 @@
       "day6_change": 1.15,
       "day7_price": 5225.0,
       "day7_change": -9.6,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2301.TW",
@@ -2358,9 +2358,9 @@
       "rsi": 15.8,
       "day_high": 263.0,
       "day_low": 248.0,
-      "vol_today": 16151466,
-      "vol_avg": 15809570,
-      "vol_ratio": 1.02,
+      "vol_today": 15916336,
+      "vol_avg": 15802852,
+      "vol_ratio": 1.01,
       "w52_high": 317.5,
       "w52_low": 139.22,
       "pe": 29.71,
@@ -2379,7 +2379,7 @@
       "day6_change": -1.31,
       "day7_price": 268.0,
       "day7_change": -5.3,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "4958.TW",
@@ -2397,12 +2397,12 @@
       "rsi": 39.5,
       "day_high": 594.0,
       "day_low": 519.0,
-      "vol_today": 45376020,
-      "vol_avg": 29988419,
-      "vol_ratio": 1.51,
+      "vol_today": 44188301,
+      "vol_avg": 29954484,
+      "vol_ratio": 1.48,
       "w52_high": 646.0,
       "w52_low": 135.08,
-      "pe": 58.62,
+      "pe": 63.96,
       "mkt_cap": "576.4B",
       "day1_price": 567.0,
       "day1_change": 0.0,
@@ -2418,7 +2418,7 @@
       "day6_change": 7.32,
       "day7_price": 519.0,
       "day7_change": -8.47,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2383.TW",
@@ -2436,12 +2436,12 @@
       "rsi": 29.2,
       "day_high": 5200.0,
       "day_low": 4685.0,
-      "vol_today": 4884266,
-      "vol_avg": 2242203,
-      "vol_ratio": 2.18,
+      "vol_today": 4442420,
+      "vol_avg": 2229578,
+      "vol_ratio": 1.99,
       "w52_high": 6321.14,
       "w52_low": 1159.7,
-      "pe": 74.3,
+      "pe": 79.31,
       "mkt_cap": "1.70T",
       "day1_price": 5070.0,
       "day1_change": 0.0,
@@ -2457,7 +2457,7 @@
       "day6_change": 0.88,
       "day7_price": 5120.0,
       "day7_change": -7.25,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2404.TW",
@@ -2475,12 +2475,12 @@
       "rsi": 17.4,
       "day_high": 1105.0,
       "day_low": 1070.0,
-      "vol_today": 592877,
-      "vol_avg": 1434891,
-      "vol_ratio": 0.41,
+      "vol_today": 564030,
+      "vol_avg": 1434066,
+      "vol_ratio": 0.39,
       "w52_high": 1341.89,
       "w52_low": 722.78,
-      "pe": 16.47,
+      "pe": 16.54,
       "mkt_cap": "204.9B",
       "day1_price": 1090.0,
       "day1_change": 0.0,
@@ -2496,7 +2496,7 @@
       "day6_change": 0.45,
       "day7_price": 1105.0,
       "day7_change": -4.33,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2408.TW",
@@ -2514,12 +2514,12 @@
       "rsi": 30.1,
       "day_high": 449.0,
       "day_low": 431.0,
-      "vol_today": 43888538,
-      "vol_avg": 46425596,
-      "vol_ratio": 0.95,
+      "vol_today": 42979384,
+      "vol_avg": 46399620,
+      "vol_ratio": 0.93,
       "w52_high": 543.0,
       "w52_low": 119.62,
-      "pe": 16.62,
+      "pe": 15.61,
       "mkt_cap": "1.52T",
       "day1_price": 414.0,
       "day1_change": 0.0,
@@ -2535,7 +2535,7 @@
       "day6_change": 1.82,
       "day7_price": 439.5,
       "day7_change": -8.53,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "3037.TW",
@@ -2553,12 +2553,12 @@
       "rsi": 20.9,
       "day_high": 1145.0,
       "day_low": 1035.0,
-      "vol_today": 29758483,
-      "vol_avg": 16282577,
-      "vol_ratio": 1.83,
+      "vol_today": 29151623,
+      "vol_avg": 16265238,
+      "vol_ratio": 1.79,
       "w52_high": 1325.0,
       "w52_low": 159.67,
-      "pe": 69.24,
+      "pe": 70.86,
       "mkt_cap": "1.74T",
       "day1_price": 1085.0,
       "day1_change": 0.0,
@@ -2574,7 +2574,7 @@
       "day6_change": 1.4,
       "day7_price": 1075.0,
       "day7_change": -9.28,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2313.TW",
@@ -2592,12 +2592,12 @@
       "rsi": 34.6,
       "day_high": 229.0,
       "day_low": 215.0,
-      "vol_today": 24203493,
-      "vol_avg": 28338649,
-      "vol_ratio": 0.85,
+      "vol_today": 23777890,
+      "vol_avg": 28326489,
+      "vol_ratio": 0.84,
       "w52_high": 295.55,
       "w52_low": 75.65,
-      "pe": 35.01,
+      "pe": 36.36,
       "mkt_cap": "266.5B",
       "day1_price": 224.5,
       "day1_change": 0.0,
@@ -2613,7 +2613,7 @@
       "day6_change": 8.77,
       "day7_price": 228.0,
       "day7_change": -8.98,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "2912.TW",
@@ -2631,12 +2631,12 @@
       "rsi": 78.4,
       "day_high": 229.5,
       "day_low": 224.0,
-      "vol_today": 2537763,
-      "vol_avg": 1951702,
-      "vol_ratio": 1.3,
+      "vol_today": 2494502,
+      "vol_avg": 1950466,
+      "vol_ratio": 1.28,
       "w52_high": 236.81,
       "w52_low": 198.79,
-      "pe": 20.39,
+      "pe": 20.43,
       "mkt_cap": "234.4B",
       "day1_price": 226.0,
       "day1_change": 0.0,
@@ -2652,7 +2652,7 @@
       "day6_change": 0.0,
       "day7_price": 224.0,
       "day7_change": 2.05,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "006208.TW",
@@ -2691,7 +2691,7 @@
       "day6_change": 0.1,
       "day7_price": 250.1,
       "day7_change": -3.32,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "3481.TW",
@@ -2709,12 +2709,12 @@
       "rsi": 29.4,
       "day_high": 48.95,
       "day_low": 46.25,
-      "vol_today": 129214405,
-      "vol_avg": 176299805,
+      "vol_today": 129047657,
+      "vol_avg": 176295041,
       "vol_ratio": 0.73,
       "w52_high": 70.9,
       "w52_low": 11.83,
-      "pe": 59.29,
+      "pe": 60.06,
       "mkt_cap": "369.1B",
       "day1_price": 46.75,
       "day1_change": 0.0,
@@ -2730,7 +2730,7 @@
       "day6_change": -0.1,
       "day7_price": 48.3,
       "day7_change": -5.11,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "3211.TWO",
@@ -2748,9 +2748,9 @@
       "rsi": 8.1,
       "day_high": 332.5,
       "day_low": 320.0,
-      "vol_today": 1248571,
-      "vol_avg": 3248801,
-      "vol_ratio": 0.38,
+      "vol_today": 1213882,
+      "vol_avg": 3247810,
+      "vol_ratio": 0.37,
       "w52_high": 457.5,
       "w52_low": 248.81,
       "pe": 46.51,
@@ -2769,7 +2769,7 @@
       "day6_change": -0.86,
       "day7_price": 349.0,
       "day7_change": -3.32,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "8299.TWO",
@@ -2787,12 +2787,12 @@
       "rsi": 32.4,
       "day_high": 1950.0,
       "day_low": 1865.0,
-      "vol_today": 2819829,
-      "vol_avg": 2792646,
-      "vol_ratio": 1.01,
+      "vol_today": 2714776,
+      "vol_avg": 2789644,
+      "vol_ratio": 0.97,
       "w52_high": 2859.12,
       "w52_low": 955.66,
-      "pe": 9.18,
+      "pe": 9.04,
       "mkt_cap": "422.4B",
       "day1_price": 1880.0,
       "day1_change": 0.0,
@@ -2808,7 +2808,7 @@
       "day6_change": 3.28,
       "day7_price": 1830.0,
       "day7_change": -6.87,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "3680.TWO",
@@ -2826,12 +2826,12 @@
       "rsi": 24.1,
       "day_high": 515.0,
       "day_low": 501.0,
-      "vol_today": 556195,
-      "vol_avg": 1462486,
-      "vol_ratio": 0.38,
+      "vol_today": 534477,
+      "vol_avg": 1461865,
+      "vol_ratio": 0.37,
       "w52_high": 610.77,
       "w52_low": 312.33,
-      "pe": 34.14,
+      "pe": 34.01,
       "mkt_cap": "48.5B",
       "day1_price": 503.0,
       "day1_change": 0.0,
@@ -2847,7 +2847,7 @@
       "day6_change": 0.0,
       "day7_price": 513.0,
       "day7_change": -6.56,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "5274.TWO",
@@ -2865,9 +2865,9 @@
       "rsi": 23.2,
       "day_high": 16850.0,
       "day_low": 15800.0,
-      "vol_today": 373678,
-      "vol_avg": 273505,
-      "vol_ratio": 1.37,
+      "vol_today": 355762,
+      "vol_avg": 272993,
+      "vol_ratio": 1.3,
       "w52_high": 20905.0,
       "w52_low": 4646.75,
       "pe": 124.09,
@@ -2886,7 +2886,7 @@
       "day6_change": 3.36,
       "day7_price": 15945.0,
       "day7_change": -8.89,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "4979.TWO",
@@ -2904,12 +2904,12 @@
       "rsi": 32.0,
       "day_high": 470.0,
       "day_low": 450.0,
-      "vol_today": 782307,
-      "vol_avg": 5946663,
+      "vol_today": 756851,
+      "vol_avg": 5945936,
       "vol_ratio": 0.13,
       "w52_high": 714.31,
       "w52_low": 186.04,
-      "pe": 77.4,
+      "pe": 74.56,
       "mkt_cap": "66.6B",
       "day1_price": 450.0,
       "day1_change": 0.0,
@@ -2925,7 +2925,7 @@
       "day6_change": -4.06,
       "day7_price": 542.0,
       "day7_change": -7.82,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "1785.TWO",
@@ -2943,12 +2943,12 @@
       "rsi": 36.4,
       "day_high": 94.4,
       "day_low": 91.7,
-      "vol_today": 3529042,
-      "vol_avg": 6119412,
-      "vol_ratio": 0.58,
+      "vol_today": 3480221,
+      "vol_avg": 6118017,
+      "vol_ratio": 0.57,
       "w52_high": 181.94,
       "w52_low": 54.78,
-      "pe": 13.75,
+      "pe": 13.67,
       "mkt_cap": "54.6B",
       "day1_price": 91.2,
       "day1_change": 0.0,
@@ -2964,7 +2964,7 @@
       "day6_change": 0.91,
       "day7_price": 98.6,
       "day7_change": -5.65,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "5347.TWO",
@@ -2982,12 +2982,12 @@
       "rsi": 32.6,
       "day_high": 164.0,
       "day_low": 158.0,
-      "vol_today": 12632328,
-      "vol_avg": 15059532,
+      "vol_today": 12578932,
+      "vol_avg": 15058006,
       "vol_ratio": 0.84,
       "w52_high": 214.91,
       "w52_low": 85.97,
-      "pe": 35.34,
+      "pe": 35.26,
       "mkt_cap": "319.5B",
       "day1_price": 161.0,
       "day1_change": 0.0,
@@ -3003,7 +3003,7 @@
       "day6_change": 3.72,
       "day7_price": 161.5,
       "day7_change": -8.24,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "3293.TWO",
@@ -3021,12 +3021,12 @@
       "rsi": 50.9,
       "day_high": 797.0,
       "day_low": 786.0,
-      "vol_today": 1001045,
-      "vol_avg": 1729278,
-      "vol_ratio": 0.58,
+      "vol_today": 924006,
+      "vol_avg": 1727077,
+      "vol_ratio": 0.54,
       "w52_high": 814.0,
       "w52_low": 638.68,
-      "pe": 18.7,
+      "pe": 18.49,
       "mkt_cap": "224.3B",
       "day1_price": 787.0,
       "day1_change": 0.0,
@@ -3042,7 +3042,7 @@
       "day6_change": -1.97,
       "day7_price": 811.0,
       "day7_change": 0.0,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "4541.TWO",
@@ -3060,12 +3060,12 @@
       "rsi": 40.2,
       "day_high": 60.4,
       "day_low": 58.1,
-      "vol_today": 747974,
-      "vol_avg": 901030,
-      "vol_ratio": 0.83,
+      "vol_today": 742115,
+      "vol_avg": 900863,
+      "vol_ratio": 0.82,
       "w52_high": 75.7,
       "w52_low": 38.33,
-      "pe": 15.13,
+      "pe": 15.21,
       "mkt_cap": "4.3B",
       "day1_price": 59.0,
       "day1_change": 0.0,
@@ -3081,7 +3081,7 @@
       "day6_change": 4.04,
       "day7_price": 57.0,
       "day7_change": -2.9,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     },
     {
       "symbol": "4931.TWO",
@@ -3099,12 +3099,12 @@
       "rsi": 25.3,
       "day_high": 211.0,
       "day_low": 201.0,
-      "vol_today": 1670341,
-      "vol_avg": 3256261,
+      "vol_today": 1646628,
+      "vol_avg": 3255584,
       "vol_ratio": 0.51,
       "w52_high": 280.0,
       "w52_low": 117.74,
-      "pe": 33.95,
+      "pe": 33.44,
       "mkt_cap": "13.3B",
       "day1_price": 200.0,
       "day1_change": 0.0,
@@ -3120,7 +3120,7 @@
       "day6_change": 1.88,
       "day7_price": 213.0,
       "day7_change": -8.19,
-      "updated_at": "2026-10-27T11:46:04"
+      "updated_at": "2026-10-28T00:40:46"
     }
   ]
 }
